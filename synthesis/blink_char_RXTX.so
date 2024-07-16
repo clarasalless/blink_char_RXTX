@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>blink_char_RXTX</design>
+	<target_verilog>C:\Users\Clara\Documents\blink_char_RXTX\synthesis\blink_char_RXTX.vm</target_verilog>
+</SynplifyOutput>

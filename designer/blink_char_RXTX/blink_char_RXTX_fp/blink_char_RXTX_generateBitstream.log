@@ -1,0 +1,13 @@
+Software Version: 2024.1.0.3
+Opened 'C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTX_fp\blink_char_RXTX.pro'
+PDB file 'C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTX.pdb' has been loaded successfully.
+DESIGN : blink_char_RXTX;  CHECKSUM : 2CF2;  PDB_VERSION : 1.9
+Info: Programming Interface selected is JTAG.
+File/Folder 'C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTX.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTX.ppd'; file programs Fabric.
+Fabric component bitstream digest: 1baf554490d0ed5af73e42ee007fb3166cde96205423f0b7b955e365d825bec3
+Entire bitstream digest: e13e42f6d83dda19dad1c84bc7364fdd16bc29dc5f24fd1a7cbd23873826dd57
+Finished: Tue Jul 09 17:28:52 2024 (Elapsed time 00:00:04)
+
+Project saved.
+Project closed.

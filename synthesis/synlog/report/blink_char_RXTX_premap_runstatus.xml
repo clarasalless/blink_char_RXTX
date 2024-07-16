@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the job information from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<job_run_status name="Mapper">
+<report_link name="Detailed report">
+<data>C:\Users\Clara\Documents\blink_char_RXTX\synthesis\synlog\blink_char_RXTX_premap.srr</data>
+<title></title>
+</report_link>
+<job_status>
+<data>Completed</data>
+</job_status>
+<job_info>
+<info name="Notes">
+<data>34</data>
+<report_link name="more">
+<data>C:\Users\Clara\Documents\blink_char_RXTX\synthesis\synlog\report\blink_char_RXTX_premap_notes.txt</data>
+</report_link>
+</info>
+<info name="Warnings">
+<data>9</data>
+<report_link name="more">
+<data>C:\Users\Clara\Documents\blink_char_RXTX\synthesis\synlog\report\blink_char_RXTX_premap_warnings.txt</data>
+</report_link>
+</info>
+<info name="Errors">
+<data>0</data>
+<report_link name="more">
+<data>C:\Users\Clara\Documents\blink_char_RXTX\synthesis\synlog\report\blink_char_RXTX_premap_errors.txt</data>
+</report_link>
+</info>
+<info name="CPU Time">
+<data>0h:00m:01s</data>
+</info>
+<info name="Real Time">
+<data>0h:00m:01s</data>
+</info>
+<info name="Peak Memory">
+<data>254MB</data>
+</info>
+<info name="Date &amp; Time">
+<data type="timestamp">1720556842</data>
+</info>
+</job_info>
+</job_run_status>

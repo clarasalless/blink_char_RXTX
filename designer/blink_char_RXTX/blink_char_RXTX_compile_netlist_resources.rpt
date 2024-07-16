@@ -1,0 +1,157 @@
+Resource Report
+Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)
+Date: Tue Jul  9 17:27:31 2024
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S005         |
+| Package                        | 144 TQ         |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 3.3V           |
+| Default I/O technology         | LVCMOS 3.3V    |
+| Restrict Probe Pins            | No             |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+-----------------------------------------------------------------------+
+| Topcell | blink_char_RXTX                                                       |
+| Format  | Verilog                                                               |
+| Source  | C:\Users\Clara\Documents\blink_char_RXTX\synthesis\blink_char_RXTX.vm |
++---------+-----------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 0    | 6060  | 0.00       |
+| DFF                       | 0    | 6060  | 0.00       |
+| I/O Register              | 0    | 252   | 0.00       |
+| User I/O                  | 4    | 84    | 4.76       |
+| -- Single-ended I/O       | 4    | 84    | 4.76       |
+| -- Differential I/O Pairs | 0    | 38    | 0.00       |
+| RAM64x18                  | 0    | 11    | 0.00       |
+| RAM1K18                   | 0    | 10    | 0.00       |
+| MACC                      | 0    | 11    | 0.00       |
+| Chip Globals              | 1    | 8     | 12.50      |
+| CCC                       | 1    | 2     | 50.00      |
+| RCOSC_25_50MHZ            | 1    | 1     | 100.00     |
+| RCOSC_1MHZ                | 0    | 1     | 0.00       |
+| XTLOSC                    | 0    | 1     | 0.00       |
+| MSS                       | 1    | 1     | 100.00     |
++---------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+------+-----+
+| Type                     | 4LUT | DFF |
++--------------------------+------+-----+
+| Fabric Logic             | 0    | 0   |
+| RAM64x18 Interface Logic | 0    | 0   |
+| RAM1K18 Interface Logic  | 0    | 0   |
+| MACC Interface Logic     | 0    | 0   |
+| Total Used               | 0    | 0   |
++--------------------------+------+-----+
+
+MSS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| Cortex-M3*    | 1    | 1     |
+| eNVM (128KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| TIMER*        | 2    | 2     |
+| CAN           | 0    | 1     |
+| SPI           | 0    | 2     |
+| I2C           | 0    | 2     |
+| UART          | 1    | 2     |
+| USB           | 0    | 1     |
+| MAC           | 0    | 1     |
+| MDDR          | 0    | 1     |
+| HPDMA         | 1    | 1     |
+| PDMA          | 1    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the MSS
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 1            | 0           | 0               |
+| Output I/O                    | 3            | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVCMOS33     |  3.30v |  N/A |  1    |  3     |  0            |
++--------------+--------+------+-------+--------+---------------+
+
+Nets assigned to chip global resources
++--------+---------+-----------------------------------------------------+
+| Fanout | Type    | Name                                                |
++--------+---------+-----------------------------------------------------+
+| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/GL0_INST               |
+|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_RGB1 |
+|        |         | Source: NETLIST                                     |
++--------+---------+-----------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+----------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                 |
++--------+---------+----------------------------------------------------------------------+
+| 1      | INT_NET | Net   : MMUART_0_RXD_F2M_c                                           |
+|        |         | Driver: MMUART_0_RXD_F2M_ibuf                                        |
+| 1      | INT_NET | Net   : GPIO_0_M2F_c                                                 |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
+| 1      | INT_NET | Net   : GPIO_1_M2F_c                                                 |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
+| 1      | INT_NET | Net   : MMUART_0_TXD_M2F_c                                           |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
+| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn                   |
+|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST                          |
+| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/LOCK                                    |
+|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/CCC_INST                          |
++--------+---------+----------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+----------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                 |
++--------+---------+----------------------------------------------------------------------+
+| 1      | INT_NET | Net   : MMUART_0_RXD_F2M_c                                           |
+|        |         | Driver: MMUART_0_RXD_F2M_ibuf                                        |
+| 1      | INT_NET | Net   : GPIO_0_M2F_c                                                 |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
+| 1      | INT_NET | Net   : GPIO_1_M2F_c                                                 |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
+| 1      | INT_NET | Net   : MMUART_0_TXD_M2F_c                                           |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
+| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn                   |
+|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST                          |
+| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/LOCK                                    |
+|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/CCC_INST                          |
++--------+---------+----------------------------------------------------------------------+
+

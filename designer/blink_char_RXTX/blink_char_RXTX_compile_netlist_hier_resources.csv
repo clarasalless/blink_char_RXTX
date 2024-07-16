@@ -1,0 +1,6 @@
+Detailed Resource Usage
+Module Name,Single-Ended I/O,PLLs and CCCs,Chip Globals,MSS,10/100/1000 Ethernet,RCOSC_50MHZ
+Primitives/Primitives,4,0,0,0,0,0
+blink_char_RXTX_sb_0/CCC_0/Primitives,0,1,1,0,0,0
+blink_char_RXTX_sb_0/FABOSC_0/Primitives,0,0,0,0,0,1
+blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/Primitives,0,0,0,1,0,0

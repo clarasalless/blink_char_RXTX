@@ -1,0 +1,112 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09M
+Install: C:\Microchip\Libero_SoC_v2024.1\SynplifyPro
+OS: Windows 10 or later
+Hostname: DESKTOP-L1LCKI7
+
+Implementation : synthesis
+
+#### START OF AREA REPORT #####[
+
+Part:			M2S005VF400STD (Microchip)
+
+-------------------------------------------------------------------------------
+########   Utilization report for  Top level view:   blink_char_RXTX   ########
+===============================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     3                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block blink_char_RXTX:	3 (16.67 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block blink_char_RXTX:	1 (5.56 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+IO       4                  100 %                
+=================================================
+Total IO PADS in the block blink_char_RXTX:	4 (22.22 % Utilization)
+
+------------------------------------------------------------------------
+########   Utilization report for  cell:   blink_char_RXTX_sb   ########
+Instance path:   blink_char_RXTX.blink_char_RXTX_sb                     
+========================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     3                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block blink_char_RXTX.blink_char_RXTX_sb:	3 (16.67 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block blink_char_RXTX.blink_char_RXTX_sb:	1 (5.56 % Utilization)
+
+-----------------------------------------------------------------------------------
+########   Utilization report for  cell:   blink_char_RXTX_sb_CCC_0_FCCC   ########
+Instance path:   blink_char_RXTX_sb.blink_char_RXTX_sb_CCC_0_FCCC                  
+===================================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  33.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block blink_char_RXTX_sb.blink_char_RXTX_sb_CCC_0_FCCC:	1 (5.56 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block blink_char_RXTX_sb.blink_char_RXTX_sb_CCC_0_FCCC:	1 (5.56 % Utilization)
+
+-------------------------------------------------------------------------------------
+########   Utilization report for  cell:   blink_char_RXTX_sb_FABOSC_0_OSC   ########
+Instance path:   blink_char_RXTX_sb.blink_char_RXTX_sb_FABOSC_0_OSC                  
+=====================================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  33.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block blink_char_RXTX_sb.blink_char_RXTX_sb_FABOSC_0_OSC:	1 (5.56 % Utilization)
+
+----------------------------------------------------------------------------
+########   Utilization report for  cell:   blink_char_RXTX_sb_MSS   ########
+Instance path:   blink_char_RXTX_sb.blink_char_RXTX_sb_MSS                  
+============================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  33.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block blink_char_RXTX_sb.blink_char_RXTX_sb_MSS:	1 (5.56 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

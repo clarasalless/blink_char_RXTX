@@ -1,0 +1,17 @@
+----------------------------------------------------------------
+-Pin Report - Date: Tue Jul  9 17:28:04 2024 Pinchecksum: NOT-AVAILABLE
+-Product: Designer
+-Release: v2024.1
+-Version: 2024.1.0.3
+-Design Name: blink_char_RXTX
+-Family: SmartFusion2
+-Die: M2S005
+-Package: 144 TQ
+-----------------------------------------------------------------
+
+Port             |Pin |Fixed |Function      |Bank     |I/O Std   |Direction                      |I/O state in Flash*Freeze mode |Resistor Pull                      |I/O available in Flash*Freeze mode |Schmitt Trigger |Odt_Static    |Odt Imp (Ohm)  |Low Power Exit |Input Delay |Slew         |Pre-Emphasis      |Output Drive (mA) |Output Load (pF) |
+-----------------|----|------|--------------|---------|----------|-------------------------------|-------------------------------|-----------------------------------|-----------------------------------|----------------|--------------|---------------|---------------|------------|-------------|------------------|------------------|-----------------|
+GPIO_0_M2F        47   Yes    MSIO84NB4      Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+GPIO_1_M2F        43   Yes    MSIO83PB4/GB3  Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 
+MMUART_0_RXD_F2M  1    Yes    MSIO52NB6      Bank6     LVCMOS33   Input                           TRISTATE                        None                                No                                  Off              ---            ---             Off             Off          ---           ---                ---                ---               
+MMUART_0_TXD_M2F  2    Yes    MSIO52PB6      Bank6     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                4                  5                 

@@ -1,0 +1,60 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Clara\\Documents\\blink_char_RXTX\\synthesis\\synwork\\blink_char_RXTX_comp.srs|-top|blink_char_RXTX|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-I|C:\\Users\\Clara\\Documents\\blink_char_RXTX\\synthesis\\|-I|C:\\Microchip\\Libero_SoC_v2024.1\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Microchip\\Libero_SoC_v2024.1\\SynplifyPro\\lib\\generic\\smartfusion2.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microchip\\Libero_SoC_v2024.1\\SynplifyPro\\bin64\\c_ver.exe":1704385142
+#CUR:"C:\\Microchip\\Libero_SoC_v2024.1\\SynplifyPro\\lib\\generic\\smartfusion2.v":1704384662
+#CUR:"C:\\Microchip\\Libero_SoC_v2024.1\\SynplifyPro\\lib\\vlog\\hypermods.v":1704384280
+#CUR:"C:\\Microchip\\Libero_SoC_v2024.1\\SynplifyPro\\lib\\vlog\\umr_capim.v":1704384514
+#CUR:"C:\\Microchip\\Libero_SoC_v2024.1\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1704384280
+#CUR:"C:\\Microchip\\Libero_SoC_v2024.1\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1704384280
+#CUR:"C:\\Users\\Clara\\Documents\\blink_char_RXTX\\component\\work\\blink_char_RXTX_sb\\CCC_0\\blink_char_RXTX_sb_CCC_0_FCCC.v":1720199710
+#CUR:"C:\\Users\\Clara\\Documents\\blink_char_RXTX\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.v":1720025444
+#CUR:"C:\\Users\\Clara\\Documents\\blink_char_RXTX\\component\\work\\blink_char_RXTX_sb\\FABOSC_0\\blink_char_RXTX_sb_FABOSC_0_OSC.v":1720199711
+#CUR:"C:\\Users\\Clara\\Documents\\blink_char_RXTX\\component\\work\\blink_char_RXTX_sb_MSS\\blink_char_RXTX_sb_MSS_syn.v":1720199706
+#CUR:"C:\\Users\\Clara\\Documents\\blink_char_RXTX\\component\\work\\blink_char_RXTX_sb_MSS\\blink_char_RXTX_sb_MSS.v":1720199706
+#CUR:"C:\\Users\\Clara\\Documents\\blink_char_RXTX\\component\\Actel\\DirectCore\\CoreResetP\\7.1.100\\rtl\\vlog\\core\\coreresetp_pcie_hotreset.v":1720025442
+#CUR:"C:\\Users\\Clara\\Documents\\blink_char_RXTX\\component\\Actel\\DirectCore\\CoreResetP\\7.1.100\\rtl\\vlog\\core\\coreresetp.v":1720025442
+#CUR:"C:\\Users\\Clara\\Documents\\blink_char_RXTX\\component\\work\\blink_char_RXTX_sb\\blink_char_RXTX_sb.v":1720199711
+#CUR:"C:\\Users\\Clara\\Documents\\blink_char_RXTX\\component\\work\\blink_char_RXTX\\blink_char_RXTX.v":1720199765
+0			"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\CCC_0\blink_char_RXTX_sb_CCC_0_FCCC.v" verilog
+1			"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\SgCore\OSC\2.0.101\osc_comps.v" verilog
+2			"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v" verilog
+3			"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS_syn.v" verilog
+4			"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS.v" verilog
+5			"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp_pcie_hotreset.v" verilog
+6			"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v" verilog
+7			"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\blink_char_RXTX_sb.v" verilog
+8			"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX\blink_char_RXTX.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 1
+3 -1
+4 3
+5 -1
+6 5
+7 2 6 0 4
+8 7
+#Dependency Lists(Users Of)
+0 7
+1 2
+2 7
+3 4
+4 7
+5 6
+6 7
+7 8
+8 -1
+#Design Unit to File Association
+module work blink_char_RXTX 8
+module work blink_char_RXTX_sb 7
+module work CoreResetP 6
+module work coreresetp_pcie_hotreset 5
+module work blink_char_RXTX_sb_MSS 4
+module work MSS_005 3
+module work blink_char_RXTX_sb_FABOSC_0_OSC 2
+module work XTLOSC_FAB 1
+module work RCOSC_25_50MHZ_FAB 1
+module work RCOSC_1MHZ_FAB 1
+module work XTLOSC 1
+module work RCOSC_25_50MHZ 1
+module work RCOSC_1MHZ 1
+module work blink_char_RXTX_sb_CCC_0_FCCC 0

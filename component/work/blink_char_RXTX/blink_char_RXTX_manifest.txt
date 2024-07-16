@@ -1,0 +1,14 @@
+Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)
+
+Date      :  Fri Jul  5 14:16:06 2024
+Project   :  C:\Users\Clara\Documents\blink_char_RXTX
+Component :  blink_char_RXTX
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX/blink_char_RXTX.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX/subsystem.bfm
+

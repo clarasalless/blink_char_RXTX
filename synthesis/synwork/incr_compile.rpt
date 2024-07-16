@@ -1,0 +1,57 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09M
+Install: C:\Microchip\Libero_SoC_v2024.1\SynplifyPro
+OS: Windows 10 or later
+Hostname: DESKTOP-L1LCKI7
+
+Implementation : synthesis
+Synopsys HDL compiler and linker, Version comp202309synp1, Build 146R, Built Jan  4 2024 08:15:03, @
+
+Modified Files: 0
+FID:  path (prevtimestamp, timestamp)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 14
+FID:  path (timestamp)
+0        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\generic\smartfusion2.v (2024-01-04 13:11:02)
+1        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\vlog\hypermods.v (2024-01-04 13:04:40)
+2        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\vlog\scemi_objects.v (2024-01-04 13:04:40)
+3        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\vlog\scemi_pipes.svh (2024-01-04 13:04:40)
+4        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\vlog\umr_capim.v (2024-01-04 13:08:34)
+5        C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v (2024-07-03 13:50:42)
+6        C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp_pcie_hotreset.v (2024-07-03 13:50:42)
+7        C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\SgCore\OSC\2.0.101\osc_comps.v (2024-07-03 13:50:44)
+8        C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX\blink_char_RXTX.v (2024-07-05 14:16:05)
+9        C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\CCC_0\blink_char_RXTX_sb_CCC_0_FCCC.v (2024-07-05 14:15:10)
+10       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v (2024-07-05 14:15:11)
+11       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\blink_char_RXTX_sb.v (2024-07-05 14:15:11)
+12       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS.v (2024-07-05 14:15:06)
+13       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS_syn.v (2024-07-05 14:15:06)
+
+*******************************************************************
+Unchanged modules: 14
+MID:  lib.cell.view
+0        work.CoreResetP.verilog
+1        work.MSS_005.verilog
+2        work.RCOSC_1MHZ.verilog
+3        work.RCOSC_1MHZ_FAB.verilog
+4        work.RCOSC_25_50MHZ.verilog
+5        work.RCOSC_25_50MHZ_FAB.verilog
+6        work.XTLOSC.verilog
+7        work.XTLOSC_FAB.verilog
+8        work.blink_char_RXTX.verilog
+9        work.blink_char_RXTX_sb.verilog
+10       work.blink_char_RXTX_sb_CCC_0_FCCC.verilog
+11       work.blink_char_RXTX_sb_FABOSC_0_OSC.verilog
+12       work.blink_char_RXTX_sb_MSS.verilog
+13       work.coreresetp_pcie_hotreset.verilog
