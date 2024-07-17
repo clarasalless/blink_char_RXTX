@@ -47,19 +47,14 @@ int main()
     uint8_t message = 0xAA;
     uint8_t rx_buff;
     uint32_t rx_idx  = 0;
-    uint8_t dataspace[10];
 
 
-    circ_bbuf_t rBuff = {
-    		dataspace,
-			.head = 0,
-			.tail = 0,
-			.maxlen = 10
+    circ_bbuf_t ring_b = {
+    		dataspace[10],
+			head = 0,
+			tail = 0,
+
     };
-
-    circ_bbuf_push(&rBuff, 0xAA);
-    printf(dataspace);
-    circ_bbuf_pop(&rBuff, 0xAA);
 
     /*
      * Infinite loop.

@@ -57,9 +57,9 @@ int main()
 			.maxlen = 10
     };
 
-    circ_bbuf_push(&rBuff, 0xAA);
-    printf(dataspace);
-    circ_bbuf_pop(&rBuff, 0xAA);
+    circ_bbuf_push(rBuff, 0xAA);
+    printf(rBuff);
+    circ_bbuf_pop(rBuff, 0xAA);
 
     /*
      * Infinite loop.

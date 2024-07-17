@@ -14,17 +14,12 @@
  */
 static void delay(void);
 void Toggle_GPIO_Pin(uint8_t GPIO_MASK);
-
 typedef struct {
     uint8_t * const buffer;
     int head;
     int tail;
     const int maxlen;
 } circ_bbuf_t;
-
-int circ_bbuf_push(circ_bbuf_t *c, uint8_t data);
-int circ_bbuf_pop(circ_bbuf_t *c, uint8_t *data);
-
 /*==============================================================================
  * main() function.
  */
@@ -47,19 +42,10 @@ int main()
     uint8_t message = 0xAA;
     uint8_t rx_buff;
     uint32_t rx_idx  = 0;
-    uint8_t dataspace[10];
+    int size_of_buffer = 8;
+    int buffer_length = 0;
+    int write_index = 0;
 
-
-    circ_bbuf_t rBuff = {
-    		dataspace,
-			.head = 0,
-			.tail = 0,
-			.maxlen = 10
-    };
-
-    circ_bbuf_push(&rBuff, 0xAA);
-    printf(dataspace);
-    circ_bbuf_pop(&rBuff, 0xAA);
 
     /*
      * Infinite loop.
@@ -140,21 +126,5 @@ int circ_bbuf_push(circ_bbuf_t *c, uint8_t data)
 
     c->buffer[c->head] = data;  // Load data and then move
     c->head = next;             // head to next data offset.
-    return 0;  // return success to indicate successful push.
-}
-
-int circ_bbuf_pop(circ_bbuf_t *c, uint8_t *data)
-{
-    int next;
-
-    if (c->head == c->tail)  // if the head == tail, we don't have any data
-        return -1;
-
-    next = c->tail + 1;  // next is where tail will point to after this read.
-    if(next >= c->maxlen)
-        next = 0;
-
-    *data = c->buffer[c->tail];  // Read data and then move
-    c->tail = next;              // tail to next offset.
     return 0;  // return success to indicate successful push.
 }

@@ -58,7 +58,7 @@ int main()
     };
 
     circ_bbuf_push(&rBuff, 0xAA);
-    printf(dataspace);
+    printf(rBuff);
     circ_bbuf_pop(&rBuff, 0xAA);
 
     /*
