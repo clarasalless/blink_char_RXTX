@@ -8,16 +8,16 @@
 #include "drivers/mss_gpio/mss_gpio.h"
 #include "drivers/mss_uart/mss_uart.h"
 #include "CMSIS/system_m2sxxx.h"
-#include "protocol.h"
-#include "ring_buffer.h"
 
 /*==============================================================================
   Private functions.
  */
 
+
 // functions
 static void delay(void);
 void Toggle_GPIO_Pin(uint8_t GPIO_MASK);
+
 
 /*==============================================================================
  * main() function.

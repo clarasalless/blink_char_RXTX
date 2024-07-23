@@ -8,16 +8,40 @@
 #include "drivers/mss_gpio/mss_gpio.h"
 #include "drivers/mss_uart/mss_uart.h"
 #include "CMSIS/system_m2sxxx.h"
-#include "protocol.h"
-#include "ring_buffer.h"
 
 /*==============================================================================
   Private functions.
  */
 
+// defines
+#define BUFFER_SIZE 10  // Define the size of the ring buffer
+
+// typedefs
+typedef struct {
+    int buffer[BUFFER_SIZE];
+    int head;
+    int tail;
+    int count;
+} RingBuffer;
+
+typedef struct {
+	uint8_t context;
+	uint8_t timeout;
+	uint8_t last_time;
+	uint8_t state;
+	uint8_t function;
+} Contexto;
+
 // functions
 static void delay(void);
 void Toggle_GPIO_Pin(uint8_t GPIO_MASK);
+void initBuffer(RingBuffer *rb);
+int addElement(RingBuffer *rb, int element);
+int removeElement(RingBuffer *rb, int *element);
+int bytesInBuffer(RingBuffer *rb);
+void protocol_poll(Contexto con, uint8_t data);
+void protocol_flush(Contexto con);
+
 
 /*==============================================================================
  * main() function.
@@ -113,6 +137,41 @@ void Toggle_GPIO_Pin(uint8_t GPIO_MASK)
 
 }
 
+// Initialize the ring buffer
+void initBuffer(RingBuffer *rb) {
+    rb->head = 0;
+    rb->tail = 0;
+    rb->count = 0;
+}
 
+// Add an element to the ring buffer
+int addElement(RingBuffer *rb, int element) {
+    if (rb->count == BUFFER_SIZE) {
+//        printf("Buffer is full. Overwriting oldest element.\n");
+        rb->tail = (rb->tail + 1) % BUFFER_SIZE;
+        rb->count--;
+    }
+    rb->buffer[rb->head] = element;
+    rb->head = (rb->head + 1) % BUFFER_SIZE;
+    rb->count++;
+    return 1;  // Success
+}
+
+// Remove an element from the ring buffer
+int removeElement(RingBuffer *rb, int *element) {
+    if (rb->count == 0) {
+//        printf("Buffer is empty.\n");
+        return 0;  // Failure
+    }
+    *element = rb->buffer[rb->tail];
+    rb->tail = (rb->tail + 1) % BUFFER_SIZE;
+    rb->count--;
+    return 1;  // Success
+}
+
+// Return the number of bytes in the buffer that have not been read yet
+int bytesInBuffer(RingBuffer *rb) {
+    return rb->count * sizeof(uint8_t);  // Assuming each element is an int
+}
 
 

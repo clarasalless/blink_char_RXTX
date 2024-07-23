@@ -15,9 +15,11 @@
   Private functions.
  */
 
+
 // functions
 static void delay(void);
 void Toggle_GPIO_Pin(uint8_t GPIO_MASK);
+
 
 /*==============================================================================
  * main() function.

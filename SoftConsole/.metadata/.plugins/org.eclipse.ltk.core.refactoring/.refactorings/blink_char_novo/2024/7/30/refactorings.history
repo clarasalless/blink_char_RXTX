@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;protocol.h&apos; to &apos;blink_char_novo&apos;" description="Move &apos;protocol.h&apos; to &apos;blink_char_novo&apos;" destination="/blink_char_novo" element1="drivers/mss_gpio/protocol.h" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1721760188766" updateReferences="true"/>
+</session>

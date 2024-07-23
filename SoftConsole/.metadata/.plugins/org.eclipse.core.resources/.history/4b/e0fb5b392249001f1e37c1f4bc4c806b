@@ -1,0 +1,17 @@
+/*
+ * ring_buffer.c
+ *
+ *  Created on: 23/07/2024
+ *      Author: Clara
+ */
+
+// defines
+#define BUFFER_SIZE 10  // Define the size of the ring buffer
+
+// typedefs
+typedef struct {
+    int buffer[BUFFER_SIZE];
+    int head;
+    int tail;
+    int count;
+} RingBuffer;

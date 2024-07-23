@@ -1,0 +1,31 @@
+/*
+ * protocol.c
+ *
+ *  Created on: 23/07/2024
+ *      Author: Clara
+ */
+
+typedef struct {
+	uint8_t context;
+	uint8_t timeout;
+	uint8_t last_time;
+	uint8_t state;
+	uint8_t function;
+} Contexto;
+
+void protocol_poll(Contexto con, uint8_t data)
+{
+	if(con.last_time < con.timeout)
+	{
+		protocol_flush(con);
+	}
+
+}
+
+void protocol_flush(Contexto con)
+{
+	con.context = 0;
+	con.timeout = 0;
+	con.last_time = 0;
+}
+

@@ -1,13 +1,13 @@
-17:23:11 **** Incremental Build of configuration Debug for project blink_char_novo ****
+15:51:26 **** Incremental Build of configuration Debug for project blink_char_novo ****
 make all 
-Building file: ../main.c
+Building file: ../ring_buffer.c
 Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-Finished building: ../main.c
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"ring_buffer.d" -MT"ring_buffer.o" -c -o "ring_buffer.o" "../ring_buffer.c"
+Finished building: ../ring_buffer.c
  
 Building target: blink_char_novo.elf
 Invoking: Cross ARM C Linker
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\Clara\Documents\blink_char_RXTX\SoftConsole\blink_char_novo\CMSIS\startup_gcc\debug-in-microsemi-smartfusion2-esram.ld" -Xlinker --gc-sections -Wl,-Map,"blink_char_novo.map" --specs=nano.specs -o "blink_char_novo.elf"  ./hal/CortexM3/GNU/hal.o ./hal/CortexM3/GNU/hw_reg_access.o  ./hal/CortexM3/cortex_nvic.o  ./drivers_config/sys_config/sys_config.o  ./drivers/mss_uart/mss_uart.o  ./drivers/mss_sys_services/mss_comblk.o ./drivers/mss_sys_services/mss_sys_services.o  ./drivers/mss_nvm/mss_nvm.o  ./drivers/mss_hpdma/mss_hpdma.o  ./drivers/mss_gpio/mss_gpio.o  ./CMSIS/startup_gcc/newlib_stubs.o ./CMSIS/startup_gcc/startup_m2sxxx.o  ./CMSIS/system_m2sxxx.o  ./main.o   
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\Clara\Documents\blink_char_RXTX\SoftConsole\blink_char_novo\CMSIS\startup_gcc\debug-in-microsemi-smartfusion2-esram.ld" -Xlinker --gc-sections -Wl,-Map,"blink_char_novo.map" --specs=nano.specs -o "blink_char_novo.elf"  ./hal/CortexM3/GNU/hal.o ./hal/CortexM3/GNU/hw_reg_access.o  ./hal/CortexM3/cortex_nvic.o  ./drivers_config/sys_config/sys_config.o  ./drivers/mss_uart/mss_uart.o  ./drivers/mss_sys_services/mss_comblk.o ./drivers/mss_sys_services/mss_sys_services.o  ./drivers/mss_nvm/mss_nvm.o  ./drivers/mss_hpdma/mss_hpdma.o  ./drivers/mss_gpio/mss_gpio.o  ./CMSIS/startup_gcc/newlib_stubs.o ./CMSIS/startup_gcc/startup_m2sxxx.o  ./CMSIS/system_m2sxxx.o  ./main.o ./protocol.o ./ring_buffer.o   
 Finished building target: blink_char_novo.elf
  
 Invoking: Cross ARM GNU Create Flash Image

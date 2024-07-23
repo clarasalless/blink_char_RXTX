@@ -1,0 +1,17 @@
+/*
+ * protocol.h
+ *
+ *  Created on: 23/07/2024
+ *      Author: Clara
+ */
+
+#ifndef DRIVERS_MSS_GPIO_PROTOCOL_H_
+#define DRIVERS_MSS_GPIO_PROTOCOL_H_
+
+
+
+#endif /* DRIVERS_MSS_GPIO_PROTOCOL_H_ */
+
+
+void protocol_poll(Contexto con, uint8_t data);
+void protocol_flush(Contexto con);

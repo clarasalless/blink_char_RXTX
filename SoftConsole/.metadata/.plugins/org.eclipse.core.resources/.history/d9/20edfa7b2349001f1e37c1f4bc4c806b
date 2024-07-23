@@ -8,16 +8,35 @@
 #include "drivers/mss_gpio/mss_gpio.h"
 #include "drivers/mss_uart/mss_uart.h"
 #include "CMSIS/system_m2sxxx.h"
-#include "protocol.h"
-#include "ring_buffer.h"
 
 /*==============================================================================
   Private functions.
  */
 
+// defines
+#define BUFFER_SIZE 10  // Define the size of the ring buffer
+
+// typedefs
+typedef struct {
+    int buffer[BUFFER_SIZE];
+    int head;
+    int tail;
+    int count;
+} RingBuffer;
+
+typedef struct {
+	uint8_t context;
+	uint8_t timeout;
+	uint8_t last_time;
+	uint8_t state;
+	uint8_t function;
+} Contexto;
+
 // functions
 static void delay(void);
 void Toggle_GPIO_Pin(uint8_t GPIO_MASK);
+
+
 
 /*==============================================================================
  * main() function.

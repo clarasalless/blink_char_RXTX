@@ -1,0 +1,13 @@
+/*
+ * ring_buffer.h
+ *
+ *  Created on: 23/07/2024
+ *      Author: Clara
+ */
+
+#ifndef RING_BUFFER_H_
+#define RING_BUFFER_H_
+
+
+
+#endif /* RING_BUFFER_H_ */
