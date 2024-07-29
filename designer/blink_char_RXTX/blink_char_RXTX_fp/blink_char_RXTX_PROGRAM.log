@@ -6,7 +6,7 @@ The 'open_project' command succeeded.
 Info: Programming is already enabled for device 'M2S005'.
 The 'enable_device' command succeeded.
 PPD file 'C:/Users/Clara/Documents/blink_char_RXTX/designer/blink_char_RXTX/blink_char_RXTX.ppd' has been loaded successfully.
-DESIGN : blink_char_RXTX;  CHECKSUM : 2CF2;  PDB_VERSION : 1.0
+DESIGN : blink_char_RXTX;  CHECKSUM : 24C2;  PDB_VERSION : 1.0
 The 'set_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer 'S207823' : Scan Chain...
@@ -19,18 +19,18 @@ programmer 'S207823' : device 'M2S005' : Family: SmartFusion2
 programmer 'S207823' : device 'M2S005' : Product:      M2S005
 programmer 'S207823' : device 'M2S005' : Cortex-M3 Enabled (M3_ALLOWED = 1)
 programmer 'S207823' : device 'M2S005' : Programming Interface Protocol: JTAG
-programmer 'S207823' : device 'M2S005' : EXPORT ISC_ENABLE_RESULT[32] = 00606d24
+programmer 'S207823' : device 'M2S005' : EXPORT ISC_ENABLE_RESULT[32] = 00606c24
 programmer 'S207823' : device 'M2S005' : EXPORT CRCERR[1] = 0
 programmer 'S207823' : device 'M2S005' : EXPORT EDCERR[1] = 0
 programmer 'S207823' : device 'M2S005' : Programming FPGA Array...
-programmer 'S207823' : device 'M2S005' : EXPORT Fabric component digest[256] = 1baf554490d0ed5af73e42ee007fb3166cde96205423f0b7b955e365d825bec3
+programmer 'S207823' : device 'M2S005' : EXPORT Fabric component digest[256] = 93a33f849560dc31e8ab56777e3c1a74c1c5dbb02a335639eec34f08905f039f
 programmer 'S207823' : device 'M2S005' : ===================================================================================
 programmer 'S207823' : device 'M2S005' : EXPORT DSN[128] = 51fab30d4c77ebc70d055f42b3fbcf6c
 programmer 'S207823' : device 'M2S005' : ===================================================================================
-programmer 'S207823' : device 'M2S005' : Finished: Tue Jul  9 17:29:29 2024 (Elapsed time 00:00:17)
+programmer 'S207823' : device 'M2S005' : Finished: Fri Jul 26 16:28:40 2024 (Elapsed time 00:00:18)
 programmer 'S207823' : device 'M2S005' : Executing action PROGRAM PASSED.
 programmer 'S207823' : Chain programming PASSED.
-Chain Programming Finished: Tue Jul  9 17:29:29 2024 (Elapsed time 00:00:17)
+Chain Programming Finished: Fri Jul 26 16:28:40 2024 (Elapsed time 00:00:18)
 
                         o - o - o - o - o - o
 

@@ -1,6 +1,6 @@
 Resource Report
 Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)
-Date: Tue Jul  9 17:27:31 2024
+Date: Wed Jul 24 15:00:04 2024
 
 Device Selection
 +--------------------------------+----------------+
@@ -37,8 +37,8 @@ Resource Usage
 +---------------------------+------+-------+------------+
 | Type                      | Used | Total | Percentage |
 +---------------------------+------+-------+------------+
-| 4LUT                      | 0    | 6060  | 0.00       |
-| DFF                       | 0    | 6060  | 0.00       |
+| 4LUT                      | 211  | 6060  | 3.48       |
+| DFF                       | 127  | 6060  | 2.10       |
 | I/O Register              | 0    | 252   | 0.00       |
 | User I/O                  | 4    | 84    | 4.76       |
 | -- Single-ended I/O       | 4    | 84    | 4.76       |
@@ -46,7 +46,7 @@ Resource Usage
 | RAM64x18                  | 0    | 11    | 0.00       |
 | RAM1K18                   | 0    | 10    | 0.00       |
 | MACC                      | 0    | 11    | 0.00       |
-| Chip Globals              | 1    | 8     | 12.50      |
+| Chip Globals              | 2    | 8     | 25.00      |
 | CCC                       | 1    | 2     | 50.00      |
 | RCOSC_25_50MHZ            | 1    | 1     | 100.00     |
 | RCOSC_1MHZ                | 0    | 1     | 0.00       |
@@ -58,11 +58,11 @@ Detailed Logic Resource Usage
 +--------------------------+------+-----+
 | Type                     | 4LUT | DFF |
 +--------------------------+------+-----+
-| Fabric Logic             | 0    | 0   |
+| Fabric Logic             | 211  | 127 |
 | RAM64x18 Interface Logic | 0    | 0   |
 | RAM1K18 Interface Logic  | 0    | 0   |
 | MACC Interface Logic     | 0    | 0   |
-| Total Used               | 0    | 0   |
+| Total Used               | 211  | 127 |
 +--------------------------+------+-----+
 
 MSS Resource Usage
@@ -86,6 +86,14 @@ MSS Resource Usage
 
 * These resources are always marked as used when you are using the MSS
 
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 10     | 1    |
+| 32     | 1    |
+| Total  | 2    |
++--------+------+
+
 I/O Function
 +-------------------------------+--------------+-------------+-----------------+
 | Type                          | w/o register | w/ register | w/ DDR register |
@@ -105,13 +113,16 @@ I/O Technology
 +--------------+--------+------+-------+--------+---------------+
 
 Nets assigned to chip global resources
-+--------+---------+-----------------------------------------------------+
-| Fanout | Type    | Name                                                |
-+--------+---------+-----------------------------------------------------+
-| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/GL0_INST               |
-|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_RGB1 |
-|        |         | Source: NETLIST                                     |
-+--------+---------+-----------------------------------------------------+
++--------+---------+-------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                          |
++--------+---------+-------------------------------------------------------------------------------+
+| 128    | INT_NET | Net   : blink_char_RXTX_sb_0/GL0_INST                                         |
+|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_RGB1                           |
+|        |         | Source: NETLIST                                                               |
+| 118    | INT_NET | Net   : blink_char_RXTX_sb_0/MSS_HPMS_READY_int                               |
+|        |         | Driver: blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIKMCH1/U0_RGB1 |
+|        |         | Source: NETLIST                                                               |
++--------+---------+-------------------------------------------------------------------------------+
 
 Nets assigned to row global resources
 +--------+------+------+
@@ -120,38 +131,54 @@ Nets assigned to row global resources
 +--------+------+------+
 
 High fanout nets
-+--------+---------+----------------------------------------------------------------------+
-| Fanout | Type    | Name                                                                 |
-+--------+---------+----------------------------------------------------------------------+
-| 1      | INT_NET | Net   : MMUART_0_RXD_F2M_c                                           |
-|        |         | Driver: MMUART_0_RXD_F2M_ibuf                                        |
-| 1      | INT_NET | Net   : GPIO_0_M2F_c                                                 |
-|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
-| 1      | INT_NET | Net   : GPIO_1_M2F_c                                                 |
-|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
-| 1      | INT_NET | Net   : MMUART_0_TXD_M2F_c                                           |
-|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
-| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn                   |
-|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST                          |
-| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/LOCK                                    |
-|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/CCC_INST                          |
-+--------+---------+----------------------------------------------------------------------+
++--------+---------+-----------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                  |
++--------+---------+-----------------------------------------------------------------------+
+| 43     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg_Z                |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg                  |
+| 42     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]           |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST  |
+| 36     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PSELx              |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreAPB3_0/iPSELS[0]                     |
+| 36     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_225_i                    |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/un2_CountIsZero_0_a2_25_o2 |
+| 33     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEn                     |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEn_0_a3_0_a2           |
+| 32     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_82                       |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg_RNIS0GUL1        |
+| 27     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_99                       |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/PrdataNext_1_m_i_o2[4]     |
+| 16     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]           |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST  |
+| 13     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[4]           |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST  |
+| 11     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/p_m3_e_3_Z                 |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/p_m3_e_3                   |
++--------+---------+-----------------------------------------------------------------------+
 
 High fanout nets (through buffer trees)
-+--------+---------+----------------------------------------------------------------------+
-| Fanout | Type    | Name                                                                 |
-+--------+---------+----------------------------------------------------------------------+
-| 1      | INT_NET | Net   : MMUART_0_RXD_F2M_c                                           |
-|        |         | Driver: MMUART_0_RXD_F2M_ibuf                                        |
-| 1      | INT_NET | Net   : GPIO_0_M2F_c                                                 |
-|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
-| 1      | INT_NET | Net   : GPIO_1_M2F_c                                                 |
-|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
-| 1      | INT_NET | Net   : MMUART_0_TXD_M2F_c                                           |
-|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST |
-| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn                   |
-|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST                          |
-| 1      | INT_NET | Net   : blink_char_RXTX_sb_0/LOCK                                    |
-|        |         | Driver: blink_char_RXTX_sb_0/CCC_0/CCC_INST                          |
-+--------+---------+----------------------------------------------------------------------+
++--------+---------+-----------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                  |
++--------+---------+-----------------------------------------------------------------------+
+| 43     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg_Z                |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg                  |
+| 42     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]           |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST  |
+| 36     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PSELx              |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreAPB3_0/iPSELS[0]                     |
+| 36     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_225_i                    |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/un2_CountIsZero_0_a2_25_o2 |
+| 33     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEn                     |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEn_0_a3_0_a2           |
+| 32     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_82                       |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg_RNIS0GUL1        |
+| 27     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_99                       |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/PrdataNext_1_m_i_o2[4]     |
+| 16     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]           |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST  |
+| 13     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[4]           |
+|        |         | Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST  |
+| 11     | INT_NET | Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/p_m3_e_3_Z                 |
+|        |         | Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/p_m3_e_3                   |
++--------+---------+-----------------------------------------------------------------------+
 

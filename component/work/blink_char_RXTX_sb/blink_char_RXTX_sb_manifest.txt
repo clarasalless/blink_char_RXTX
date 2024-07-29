@@ -1,15 +1,21 @@
 Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)
 
-Date      :  Fri Jul  5 14:15:12 2024
+Date      :  Wed Jul 24 14:42:12 2024
 Project   :  C:\Users\Clara\Documents\blink_char_RXTX
 Component :  blink_char_RXTX_sb
 Family    :  SmartFusion2
 
 
 HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb/blink_char_RXTX_sb.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb/blink_char_RXTX_sb.v
     C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb/CCC_0/blink_char_RXTX_sb_CCC_0_FCCC.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
     C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp.v
     C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp_pcie_hotreset.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/1.1.101/rtl/verilog/o/CoreTimer.v
     C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb/FABOSC_0/blink_char_RXTX_sb_FABOSC_0_OSC.v
     C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb/blink_char_RXTX_sb.v
     C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb_MSS/blink_char_RXTX_sb_MSS.v
@@ -23,6 +29,8 @@ HDL source files for Mentor Precision Synthesis tool:
     C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb_MSS/blink_char_RXTX_sb_MSS_pre.v
 
 Stimulus files for all Simulation tools:
+    C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb/subsystem.bfm
+    C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb/subsystem.bfm
     C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb/subsystem.bfm
     C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb_MSS/CM3_compile_bfm.tcl
     C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb_MSS/user.bfm

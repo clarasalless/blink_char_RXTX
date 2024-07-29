@@ -1,6 +1,6 @@
 Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)
 
-Date      :  Fri Jul  5 14:15:07 2024
+Date      :  Wed Jul 24 14:42:07 2024
 Project   :  C:\Users\Clara\Documents\blink_char_RXTX
 Component :  blink_char_RXTX_sb_MSS
 Family    :  SmartFusion2

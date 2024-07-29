@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;blink_char_novo/bibliotecas/source&apos;" deleteContents="false" description="Delete resource &apos;blink_char_novo/bibliotecas/source&apos;" element1="/blink_char_novo/bibliotecas/source" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1722269210750"/>&#x0A;<refactoring comment="Delete resource &apos;blink_char_novo/bibliotecas/headers&apos;" deleteContents="false" description="Delete resource &apos;blink_char_novo/bibliotecas/headers&apos;" element1="/blink_char_novo/bibliotecas/headers" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1722269214596"/>
+</session>

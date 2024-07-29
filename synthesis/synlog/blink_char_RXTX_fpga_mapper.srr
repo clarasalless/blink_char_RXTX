@@ -1,4 +1,4 @@
-# Tue Jul  9 17:27:22 2024
+# Wed Jul 24 14:59:55 2024
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -37,7 +37,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 Vector Gate Optimization Enabled: Optimizing  Partial Hanging Logic. 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 247MB peak: 247MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 248MB)
 
 @N: MO111 :"c:\users\clara\documents\blink_char_rxtx\component\work\blink_char_rxtx_sb\fabosc_0\blink_char_rxtx_sb_fabosc_0_osc.v":20:7:20:16|Tristate driver XTLOSC_O2F (in view: work.blink_char_RXTX_sb_FABOSC_0_OSC(verilog)) on net XTLOSC_O2F (in view: work.blink_char_RXTX_sb_FABOSC_0_OSC(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\clara\documents\blink_char_rxtx\component\work\blink_char_rxtx_sb\fabosc_0\blink_char_rxtx_sb_fabosc_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.blink_char_RXTX_sb_FABOSC_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.blink_char_RXTX_sb_FABOSC_0_OSC(verilog)) has its enable tied to GND.
@@ -47,10 +47,12 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 @W: BN132 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":946:4:946:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.CONFIG2_DONE_q1 because it is equivalent to instance blink_char_RXTX_sb_0.CORERESETP_0.CONFIG1_DONE_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":946:4:946:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.CONFIG2_DONE_clk_base because it is equivalent to instance blink_char_RXTX_sb_0.CORERESETP_0.sdif3_spll_lock_q2. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":929:4:929:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.CONFIG1_DONE_clk_base because it is equivalent to instance blink_char_RXTX_sb_0.CORERESETP_0.sdif3_spll_lock_q2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BZ173 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreapb3\4.1.100\rtl\vlog\core\coreapb3.v":267:2:267:5|ROM CoreAPB3_0.iPSELS_raw_2[0] (in view: work.blink_char_RXTX_sb(verilog)) mapped in logic.
+@N: MO106 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreapb3\4.1.100\rtl\vlog\core\coreapb3.v":267:2:267:5|Found ROM CoreAPB3_0.iPSELS_raw_2[0] (in view: work.blink_char_RXTX_sb(verilog)) with 1 words by 1 bit.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 251MB peak: 251MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 254MB peak: 254MB)
 
-Encoding state machine sm0_state[6:0] (in view: work.CoreResetP_Z1(verilog))
+Encoding state machine sm0_state[6:0] (in view: work.CoreResetP_Z2(verilog))
 original code -> new code
    000 -> 0000001
    001 -> 0000010
@@ -59,13 +61,15 @@ original code -> new code
    100 -> 0010000
    101 -> 0100000
    110 -> 1000000
+@N: MO231 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coretimer\2.0.103\rtl\vlog\core\coretimer.v":262:4:262:9|Found counter in view:CORETIMER_LIB.CoreTimer_32s_1s_19s_0s(verilog) instance Count[31:0] 
+@N: MO231 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coretimer\2.0.103\rtl\vlog\core\coretimer.v":211:4:211:9|Found counter in view:CORETIMER_LIB.CoreTimer_32s_1s_19s_0s(verilog) instance PreScale[9:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 252MB peak: 252MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 254MB peak: 254MB)
 
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.INIT_DONE_int (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_state[6] (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 252MB peak: 253MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 257MB peak: 257MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -73,27 +77,23 @@ Available hyper_sources - for debug and ip models
 
 NConnInternalConnection caching is on
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 253MB peak: 253MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 257MB peak: 258MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 253MB peak: 253MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 258MB peak: 258MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 253MB peak: 253MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 258MB peak: 258MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 253MB peak: 253MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 258MB peak: 258MB)
 
-@W: BN114 :"c:\users\clara\documents\blink_char_rxtx\component\work\blink_char_rxtx_sb\blink_char_rxtx_sb.v":257:9:257:20|Removing instance blink_char_RXTX_sb_0.SYSRESET_POR (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1549:4:1549:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.release_sdif2_core (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @A: BN291 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1549:4:1549:9|Boundary register blink_char_RXTX_sb_0.CORERESETP_0.release_sdif2_core (in view: work.blink_char_RXTX(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1517:4:1517:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.release_sdif1_core (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @A: BN291 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1517:4:1517:9|Boundary register blink_char_RXTX_sb_0.CORERESETP_0.release_sdif1_core (in view: work.blink_char_RXTX(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1485:4:1485:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.release_sdif0_core (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @A: BN291 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1485:4:1485:9|Boundary register blink_char_RXTX_sb_0.CORERESETP_0.release_sdif0_core (in view: work.blink_char_RXTX(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":526:4:526:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.FIC_2_APB_M_PRESET_N_q1 (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":511:4:511:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.RESET_N_M2F_q1 (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":496:4:496:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.POWER_ON_RESET_N_q1 (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1646:4:1646:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.release_sdif3_core_q1 (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @A: BN291 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1646:4:1646:9|Boundary register blink_char_RXTX_sb_0.CORERESETP_0.release_sdif3_core_q1 (in view: work.blink_char_RXTX(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1646:4:1646:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.release_sdif2_core_q1 (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
@@ -110,9 +110,6 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CP
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":856:4:856:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_areset_n_rcosc (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":755:4:755:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_areset_n_q1 (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":755:4:755:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_areset_n_clk_base (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":526:4:526:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.FIC_2_APB_M_PRESET_N_clk_base (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":511:4:511:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.RESET_N_M2F_clk_base (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":496:4:496:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.POWER_ON_RESET_N_clk_base (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1646:4:1646:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.release_sdif3_core_clk_base (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1646:4:1646:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.release_sdif2_core_clk_base (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1646:4:1646:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.release_sdif1_core_clk_base (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
@@ -130,47 +127,50 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CP
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":884:4:884:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sdif1_areset_n_rcosc (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":870:4:870:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sdif0_areset_n_rcosc_q1 (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":870:4:870:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sdif0_areset_n_rcosc (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":565:4:565:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.MSS_HPMS_READY_int (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_state[5] (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_state[4] (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_state[3] (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_state[2] (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_state[1] (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_state[0] (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":545:4:545:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.mss_ready_state (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":545:4:545:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.mss_ready_select (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\clara\documents\blink_char_rxtx\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance blink_char_RXTX_sb_0.CORERESETP_0.sm0_state[5] (in view: work.blink_char_RXTX(verilog)) because it does not drive other instances.
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 253MB peak: 253MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 258MB peak: 258MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 253MB peak: 254MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 258MB peak: 258MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		100000.00ns		   0 /         0
+   1		0h:00m:01s		    -0.28ns		 217 /       127
+   2		0h:00m:01s		    -0.28ns		 216 /       127
+   3		0h:00m:01s		    -0.07ns		 216 /       127
+
+   4		0h:00m:01s		    -0.07ns		 216 /       127
+   5		0h:00m:01s		     0.03ns		 217 /       127
+@N: FP130 |Promoting Net blink_char_RXTX_sb_0.CORERESETP_0.MSS_HPMS_READY_int on CLKINT  I_64 
 
 Added 0 Buffers
 Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 254MB peak: 254MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 259MB peak: 259MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 254MB peak: 254MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 259MB peak: 259MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 254MB peak: 254MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 259MB peak: 259MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 254MB peak: 254MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 259MB peak: 260MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 205MB peak: 254MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 210MB peak: 260MB)
 
 Writing Analyst data base C:\Users\Clara\Documents\blink_char_RXTX\synthesis\synwork\blink_char_RXTX_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 253MB peak: 254MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 258MB peak: 260MB)
 
 Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
@@ -178,13 +178,13 @@ Writing Verilog Simulation files
 @W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
 @W: BW156 :|Option "-name" of set_clock_groups cannot be forward-annotated; there is no equivalent option in your place-and-route tool.
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 255MB peak: 255MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 259MB peak: 260MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 255MB peak: 255MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 259MB peak: 260MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 254MB peak: 255MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 257MB peak: 260MB)
 
 @W: MT246 :"c:\users\clara\documents\blink_char_rxtx\component\work\blink_char_rxtx_sb\ccc_0\blink_char_rxtx_sb_ccc_0_fccc.v":20:36:20:43|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net blink_char_RXTX_sb_0.CCC_0.GL0_net.
@@ -192,7 +192,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Tue Jul  9 17:27:25 2024
+# Timing report written on Wed Jul 24 14:59:58 2024
 #
 
 
@@ -212,12 +212,12 @@ Performance Summary
 *******************
 
 
-Worst slack in design: NA
+Worst slack in design: 1.127
 
                                                                       Requested     Estimated     Requested     Estimated               Clock        Clock     
 Starting Clock                                                        Frequency     Frequency     Period        Period        Slack     Type         Group     
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     NA            10.000        NA            NA        inferred     (multiple)
+blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     112.7 MHz     10.000        8.873         1.127     inferred     (multiple)
 blink_char_RXTX_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     100.0 MHz     NA            10.000        NA            NA        inferred     (multiple)
 ===============================================================================================================================================================
 Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
@@ -229,11 +229,12 @@ Estimated period and frequency reported as NA means no slack depends directly on
 Clock Relationships
 *******************
 
-Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
---------------------------------------------------------------------------------------------------------
-Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
---------------------------------------------------------------------------------------------------------
-========================================================================================================
+Clocks                                                                                                      |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                              Ending                                                |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock  blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock  |  10.000      1.127  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -245,14 +246,106 @@ Interface Information
 No IO constraint found
 
 
+
+====================================
+Detailed Report for Clock: blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                 Starting                                                                                                                                            Arrival          
+Instance                                                         Reference                                                Type        Pin                Net                                                         Time        Slack
+                                                                 Clock                                                                                                                                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_ADDR[15]     blink_char_RXTX_sb_MSS_TMP_0_FIC_0_APB_MASTER_PADDR[15]     3.885       1.127
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_ADDR[14]     blink_char_RXTX_sb_MSS_TMP_0_FIC_0_APB_MASTER_PADDR[14]     3.531       1.198
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_ADDR[13]     blink_char_RXTX_sb_MSS_TMP_0_FIC_0_APB_MASTER_PADDR[13]     3.567       1.211
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_ADDR[12]     blink_char_RXTX_sb_MSS_TMP_0_FIC_0_APB_MASTER_PADDR[12]     3.755       1.426
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_SEL          blink_char_RXTX_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx         3.782       1.470
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_ADDR[4]      CoreAPB3_0_APBmslave0_PADDR[4]                              3.574       1.665
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_WRITE        CoreAPB3_0_APBmslave0_PWRITE                                3.704       1.846
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_ADDR[2]      CoreAPB3_0_APBmslave0_PADDR[2]                              3.562       1.943
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_ADDR[3]      CoreAPB3_0_APBmslave0_PADDR[3]                              3.639       2.003
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_005     F_HM0_ENABLE       CoreAPB3_0_APBmslave0_PENABLE                               3.626       2.111
+======================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                   Starting                                                                             Required          
+Instance                                           Reference                                                Type     Pin     Net        Time         Slack
+                                                   Clock                                                                                                  
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[4]      blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_17_i     9.745        1.127
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[5]      blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_38_i     9.745        1.127
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[6]      blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_40_i     9.745        1.127
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[7]      blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_42_i     9.745        1.127
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[8]      blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_44_i     9.745        1.127
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[9]      blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_46_i     9.745        1.127
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[10]     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_48_i     9.745        1.127
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[11]     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_50_i     9.745        1.127
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[12]     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_52_i     9.745        1.127
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[13]     blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       N_54_i     9.745        1.127
+==========================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      8.617
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     1.127
+
+    Number of logic level(s):                4
+    Starting point:                          blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[15]
+    Ending point:                            blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[4] / D
+    The start point is clocked by            blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
+    The end   point is clocked by            blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
+
+Instance / Net                                                               Pin                Pin               Arrival     No. of    
+Name                                                             Type        Name               Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------
+blink_char_RXTX_sb_0.blink_char_RXTX_sb_MSS_0.MSS_ADLIB_INST     MSS_005     F_HM0_ADDR[15]     Out     3.885     3.885 f     -         
+blink_char_RXTX_sb_MSS_TMP_0_FIC_0_APB_MASTER_PADDR[15]          Net         -                  -       0.248     -           1         
+blink_char_RXTX_sb_0.CoreAPB3_0.iPSELS[0]                        CFG4        D                  In      -         4.133 f     -         
+blink_char_RXTX_sb_0.CoreAPB3_0.iPSELS[0]                        CFG4        Y                  Out     0.317     4.451 r     -         
+CoreAPB3_0_APBmslave0_PSELx                                      Net         -                  -       1.329     -           36        
+blink_char_RXTX_sb_0.CoreTimer_0_0.PrdataNextEn_0_a3_0_a2        CFG3        A                  In      -         5.780 r     -         
+blink_char_RXTX_sb_0.CoreTimer_0_0.PrdataNextEn_0_a3_0_a2        CFG3        Y                  Out     0.077     5.857 r     -         
+PrdataNextEn_0_a3_0_a2                                           Net         -                  -       0.896     -           6         
+blink_char_RXTX_sb_0.CoreTimer_0_0.PrdataNext_1_m_i_o2[4]        CFG3        C                  In      -         6.753 r     -         
+blink_char_RXTX_sb_0.CoreTimer_0_0.PrdataNext_1_m_i_o2[4]        CFG3        Y                  Out     0.226     6.978 f     -         
+N_99                                                             Net         -                  -       1.242     -           27        
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA_RNO[4]                CFG4        B                  In      -         8.220 f     -         
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA_RNO[4]                CFG4        Y                  Out     0.148     8.369 r     -         
+N_17_i                                                           Net         -                  -       0.248     -           1         
+blink_char_RXTX_sb_0.CoreTimer_0_0.iPRDATA[4]                    SLE         D                  In      -         8.617 r     -         
+========================================================================================================================================
+Total path delay (propagation time + setup) of 8.873 is 4.909(55.3%) logic and 3.964(44.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
 ##### END OF TIMING REPORT #####]
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 255MB peak: 255MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 258MB peak: 260MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 255MB peak: 255MB)
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 258MB peak: 260MB)
 
 ---------------------------------------
 Resource Usage Report for blink_char_RXTX 
@@ -260,13 +353,20 @@ Resource Usage Report for blink_char_RXTX
 Mapping to part: m2s005vf400std
 Cell usage:
 CCC             1 use
-CLKINT          1 use
+CLKINT          2 uses
 MSS_005         1 use
 RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+CFG2           43 uses
+CFG3           11 uses
+CFG4           115 uses
+
+Carry cells:
+ARI1            42 uses - used for arithmetic functions
 
 
 Sequential Cells: 
-SLE            0 uses
+SLE            127 uses
 
 DSP Blocks:    0 of 11 (0%)
 
@@ -276,9 +376,9 @@ INBUF          1 use
 OUTBUF         3 uses
 
 
-Global Clock Buffers: 1
+Global Clock Buffers: 2
 
-Total LUTs:    0
+Total LUTs:    211
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -286,14 +386,14 @@ RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  0 + 0 + 0 + 0 = 0;
-Total number of LUTs after P&R:  0 + 0 + 0 + 0 = 0;
+Total number of SLEs after P&R:  127 + 0 + 0 + 0 = 127;
+Total number of LUTs after P&R:  211 + 0 + 0 + 0 = 211;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 122MB peak: 255MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 127MB peak: 260MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Tue Jul  9 17:27:25 2024
+# Wed Jul 24 14:59:58 2024
 
 ###########################################################]

@@ -2,7 +2,7 @@
 <device>
   <name>blink_char_RXTX</name>
   <version>1.0</version>
-  <description>CMSIS description for blink_char_RXTX.  Created by Microsemi SmartDesign on Tue Jul  9 17:29:50 2024</description>
+  <description>CMSIS description for blink_char_RXTX.  Created by Microsemi SmartDesign on Wed Jul 24 15:57:24 2024</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
@@ -33,6 +33,148 @@
     <peripheral>
       <name>ENTIRE_ENVM</name>
       <baseAddress>0x60000000</baseAddress>
+    </peripheral>
+    <peripheral>
+      <name>CoreTimer_0_0</name>
+      <baseAddress>0x50000000%0x30000000</baseAddress>
+      <addressBlock>
+        <offset>0x5000000000030000000</offset>
+        <size>0x1000</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>TimerLoad</name>
+          <description>
+          </description>
+          <addressOffset>0x00</addressOffset>
+          <size>32</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>LoadValue</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>TimerValue</name>
+          <description>
+          </description>
+          <addressOffset>0x04</addressOffset>
+          <size>32</size>
+          <access>read-only</access>
+          <resetValue>0xFFFFFFFF</resetValue>
+          <fields>
+            <field>
+              <name>CurrentValue</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>TimerControl</name>
+          <description>
+          </description>
+          <addressOffset>0x08</addressOffset>
+          <size>32</size>
+          <access>read-write</access>
+          <resetValue>0x00</resetValue>
+          <fields>
+            <field>
+              <name>TimerEnable</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>InterruptEnable</name>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>TimerMode</name>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>TimerPrescale</name>
+          <description>
+          </description>
+          <addressOffset>0x0C</addressOffset>
+          <size>32</size>
+          <access>write-only</access>
+          <resetValue>0x0</resetValue>
+          <fields>
+            <field>
+              <name>Prescale</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>write-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>TimerIntClr</name>
+          <description>
+          </description>
+          <addressOffset>0x10</addressOffset>
+          <size>32</size>
+          <access>write-only</access>
+          <resetValue>0x0</resetValue>
+          <fields>
+            <field>
+              <name>TimerIntClr</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>write-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>TimerRIS</name>
+          <description>
+          </description>
+          <addressOffset>0x14</addressOffset>
+          <size>32</size>
+          <access>read-only</access>
+          <resetValue>0x0</resetValue>
+          <fields>
+            <field>
+              <name>RawTimerInterrupt</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>TimerMIS</name>
+          <description>
+          </description>
+          <addressOffset>0x18</addressOffset>
+          <size>32</size>
+          <access>read-only</access>
+          <resetValue>0x0</resetValue>
+          <fields>
+            <field>
+              <name>TimerInterrupt</name>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+      </registers>
     </peripheral>
     <peripheral>
       <name>CACHE_BACKDOOR</name>

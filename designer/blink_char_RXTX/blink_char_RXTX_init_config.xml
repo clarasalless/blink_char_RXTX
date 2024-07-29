@@ -3,7 +3,7 @@
 <doc>
 <title>Configuration Report for MSS, SERDES(s), Fabric DDR and Fabric CCC(s)</title>
 <text>Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)</text>
-<text>Date: Tue Jul  9 17:28:33 2024
+<text>Date: Wed Jul 24 15:00:52 2024
 </text>
 <section><name>blink_char_RXTX_sb_0/CCC_0/CCC_INST/INST_CCC_IP</name></section>
 <table>
@@ -107,7 +107,7 @@
  <cell>FCCC_NGMUX1_CR0</cell>
  <cell>SELGL[14:10]</cell>
  <cell>INIT[96:92]</cell>
- <cell>5&apos;h7</cell>
+ <cell>5&apos;h18</cell>
 </row>
 <row>
  <cell>FCCC_NGMUX1_CR1</cell>
@@ -131,7 +131,7 @@
  <cell>FCCC_NGMUX3_CR0</cell>
  <cell>SELGL[34:30]</cell>
  <cell>INIT[116:112]</cell>
- <cell>5&apos;h18</cell>
+ <cell>5&apos;h7</cell>
 </row>
 <row>
  <cell>FCCC_NGMUX3_CR1</cell>
@@ -1905,7 +1905,7 @@
  <cell>MSSDDR_PLL_STATUS_LOW</cell>
  <cell>FACC_PLL_DIVR</cell>
  <cell>INIT[551:546]</cell>
- <cell>6&apos;h00</cell>
+ <cell>6&apos;h01</cell>
  <cell>INIT[62]</cell>
  <cell>1</cell>
 </row>
@@ -1913,7 +1913,7 @@
  <cell>MSSDDR_PLL_STATUS_LOW</cell>
  <cell>FACC_PLL_DIVF</cell>
  <cell>INIT[561:552]</cell>
- <cell>10&apos;h007</cell>
+ <cell>10&apos;h001</cell>
  <cell>INIT[62]</cell>
  <cell>1</cell>
 </row>
@@ -1929,7 +1929,7 @@
  <cell>MSSDDR_PLL_STATUS_LOW</cell>
  <cell>FACC_PLL_RANGE</cell>
  <cell>INIT[568:565]</cell>
- <cell>4&apos;hA</cell>
+ <cell>4&apos;h9</cell>
  <cell>INIT[62]</cell>
  <cell>1</cell>
 </row>
@@ -1977,7 +1977,7 @@
  <cell>MSSDDR_PLL_STATUS_HIGH</cell>
  <cell>FACC_PLL_FSE</cell>
  <cell>INIT[579:579]</cell>
- <cell>1&apos;h1</cell>
+ <cell>1&apos;h0</cell>
  <cell>INIT[63]</cell>
  <cell>1</cell>
 </row>
@@ -2089,7 +2089,7 @@
  <cell>MSSDDR_FACC_CONFIG_1</cell>
  <cell>BASE_DIVISOR</cell>
  <cell>INIT[613:611]</cell>
- <cell>3&apos;h6</cell>
+ <cell>3&apos;h0</cell>
  <cell>INIT[73]</cell>
  <cell>1</cell>
 </row>

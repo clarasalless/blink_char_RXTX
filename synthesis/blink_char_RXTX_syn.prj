@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version V-2023.09M
 #--  Project file C:\Users\Clara\Documents\blink_char_RXTX\synthesis\blink_char_RXTX_syn.prj
-#--  Written on Tue Jul  9 17:27:26 2024
+#--  Written on Wed Jul 24 14:59:59 2024
 
 
 #project files
@@ -12,6 +12,10 @@ add_file -verilog "C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink
 add_file -verilog "C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb_MSS/blink_char_RXTX_sb_MSS.v"
 add_file -verilog "C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp_pcie_hotreset.v"
 add_file -verilog "C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v"
+add_file -verilog -lib CORETIMER_LIB "C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/core/coretimer.v"
 add_file -verilog "C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX_sb/blink_char_RXTX_sb.v"
 add_file -verilog "C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX/blink_char_RXTX.v"
 add_file -fpga_constraint "C:/Users/Clara/Documents/blink_char_RXTX/designer/blink_char_RXTX/synthesis.fdc"

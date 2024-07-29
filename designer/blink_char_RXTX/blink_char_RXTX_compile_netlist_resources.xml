@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)</text>
-<text>Date: Tue Jul  9 17:27:31 2024
+<text>Date: Wed Jul 24 15:00:04 2024
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>0</cell>
+ <cell>211</cell>
  <cell>6060</cell>
- <cell>0.00</cell>
+ <cell>3.48</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>0</cell>
+ <cell>127</cell>
  <cell>6060</cell>
- <cell>0.00</cell>
+ <cell>2.10</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -160,9 +160,9 @@
 </row>
 <row>
  <cell>Chip Globals</cell>
- <cell>1</cell>
+ <cell>2</cell>
  <cell>8</cell>
- <cell>12.50</cell>
+ <cell>25.00</cell>
 </row>
 <row>
  <cell>CCC</cell>
@@ -204,8 +204,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>0</cell>
- <cell>0</cell>
+ <cell>211</cell>
+ <cell>127</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>0</cell>
- <cell>0</cell>
+ <cell>211</cell>
+ <cell>127</cell>
 </row>
 </table>
 <section><name>MSS Resource Usage</name></section>
@@ -303,6 +303,27 @@
 </table>
 <text>* These resources are always marked as used when you are using the MSS</text>
 <text></text>
+<section><name>Detailed Carry Chains Resource Usage</name></section>
+<table>
+<header>
+</header>
+<row>
+ <cell>Length</cell>
+ <cell>Used</cell>
+</row>
+<row>
+ <cell>10</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>32</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>Total</cell>
+ <cell>2</cell>
+</row>
+</table>
 <section><name>I/O Function</name></section>
 <table>
 <header>
@@ -369,7 +390,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>1</cell>
+ <cell>128</cell>
  <cell>INT_NET</cell>
  <cell>Net   : blink_char_RXTX_sb_0/GL0_INST</cell>
 </row>
@@ -377,6 +398,21 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+<row>
+ <cell>118</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/MSS_HPMS_READY_int</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIKMCH1/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -400,19 +436,19 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>1</cell>
+ <cell>43</cell>
  <cell>INT_NET</cell>
- <cell>Net   : MMUART_0_RXD_F2M_c</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: MMUART_0_RXD_F2M_ibuf</cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg</cell>
 </row>
 <row>
- <cell>1</cell>
+ <cell>42</cell>
  <cell>INT_NET</cell>
- <cell>Net   : GPIO_0_M2F_c</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]</cell>
 </row>
 <row>
  <cell></cell>
@@ -420,9 +456,59 @@
  <cell>Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>1</cell>
+ <cell>36</cell>
  <cell>INT_NET</cell>
- <cell>Net   : GPIO_1_M2F_c</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PSELx</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreAPB3_0/iPSELS[0]</cell>
+</row>
+<row>
+ <cell>36</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_225_i</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/un2_CountIsZero_0_a2_25_o2</cell>
+</row>
+<row>
+ <cell>33</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEn</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEn_0_a3_0_a2</cell>
+</row>
+<row>
+ <cell>32</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_82</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg_RNIS0GUL1</cell>
+</row>
+<row>
+ <cell>27</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_99</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/PrdataNext_1_m_i_o2[4]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]</cell>
 </row>
 <row>
  <cell></cell>
@@ -430,9 +516,9 @@
  <cell>Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>1</cell>
+ <cell>13</cell>
  <cell>INT_NET</cell>
- <cell>Net   : MMUART_0_TXD_M2F_c</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[4]</cell>
 </row>
 <row>
  <cell></cell>
@@ -440,24 +526,14 @@
  <cell>Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>1</cell>
+ <cell>11</cell>
  <cell>INT_NET</cell>
- <cell>Net   : blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/p_m3_e_3_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST</cell>
-</row>
-<row>
- <cell>1</cell>
- <cell>INT_NET</cell>
- <cell>Net   : blink_char_RXTX_sb_0/LOCK</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: blink_char_RXTX_sb_0/CCC_0/CCC_INST</cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/p_m3_e_3</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -468,19 +544,19 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>1</cell>
+ <cell>43</cell>
  <cell>INT_NET</cell>
- <cell>Net   : MMUART_0_RXD_F2M_c</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: MMUART_0_RXD_F2M_ibuf</cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg</cell>
 </row>
 <row>
- <cell>1</cell>
+ <cell>42</cell>
  <cell>INT_NET</cell>
- <cell>Net   : GPIO_0_M2F_c</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]</cell>
 </row>
 <row>
  <cell></cell>
@@ -488,9 +564,59 @@
  <cell>Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>1</cell>
+ <cell>36</cell>
  <cell>INT_NET</cell>
- <cell>Net   : GPIO_1_M2F_c</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PSELx</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreAPB3_0/iPSELS[0]</cell>
+</row>
+<row>
+ <cell>36</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_225_i</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/un2_CountIsZero_0_a2_25_o2</cell>
+</row>
+<row>
+ <cell>33</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEn</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEn_0_a3_0_a2</cell>
+</row>
+<row>
+ <cell>32</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_82</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/LoadEnReg_RNIS0GUL1</cell>
+</row>
+<row>
+ <cell>27</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/N_99</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/PrdataNext_1_m_i_o2[4]</cell>
+</row>
+<row>
+ <cell>16</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]</cell>
 </row>
 <row>
  <cell></cell>
@@ -498,9 +624,9 @@
  <cell>Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>1</cell>
+ <cell>13</cell>
  <cell>INT_NET</cell>
- <cell>Net   : MMUART_0_TXD_M2F_c</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreAPB3_0_APBmslave0_PADDR[4]</cell>
 </row>
 <row>
  <cell></cell>
@@ -508,24 +634,14 @@
  <cell>Driver: blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>1</cell>
+ <cell>11</cell>
  <cell>INT_NET</cell>
- <cell>Net   : blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn</cell>
+ <cell>Net   : blink_char_RXTX_sb_0/CoreTimer_0_0/p_m3_e_3_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: blink_char_RXTX_sb_0/CCC_0/GL0_INST</cell>
-</row>
-<row>
- <cell>1</cell>
- <cell>INT_NET</cell>
- <cell>Net   : blink_char_RXTX_sb_0/LOCK</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: blink_char_RXTX_sb_0/CCC_0/CCC_INST</cell>
+ <cell>Driver: blink_char_RXTX_sb_0/CoreTimer_0_0/p_m3_e_3</cell>
 </row>
 </table>
 </doc>

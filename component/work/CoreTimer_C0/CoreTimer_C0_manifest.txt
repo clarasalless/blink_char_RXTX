@@ -1,0 +1,26 @@
+Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)
+
+Date      :  Wed Jul 24 14:45:35 2024
+Project   :  C:\Users\Clara\Documents\blink_char_RXTX
+Component :  CoreTimer_C0
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/core/coretimer.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/work/CoreTimer_C0/CoreTimer_C0.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/mti/bfmtovec.exe
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/mti/bfmtovec.lin
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/mti/bfmtovec_compile.do
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/mti/wave.do
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/test/user_tb.bfm
+
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_ahbtoapb.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_apb.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_apbtoapb.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_main.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_package.v
+    C:/Users/Clara/Documents/blink_char_RXTX/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/test/testbench.v
+

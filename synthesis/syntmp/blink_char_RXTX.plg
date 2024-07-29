@@ -1,16 +1,16 @@
-@P:  Worst Slack : NA
-@P:  blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock - Estimated Frequency : NA
+@P:  Worst Slack : 1.127
+@P:  blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock - Estimated Frequency : 112.7 MHz
 @P:  blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock - Estimated Period : NA
+@P:  blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock - Estimated Period : 8.873
 @P:  blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock - Requested Period : 10.000
-@P:  blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock - Slack : NA
+@P:  blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock - Slack : 1.127
 @P:  blink_char_RXTX_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Estimated Frequency : NA
 @P:  blink_char_RXTX_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Requested Frequency : 100.0 MHz
 @P:  blink_char_RXTX_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Estimated Period : NA
 @P:  blink_char_RXTX_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Requested Period : 10.000
 @P:  blink_char_RXTX_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Slack : NA
 @P: blink_char_RXTX Part : m2s005vf400std
-@P: blink_char_RXTX Register bits  : 0 
+@P: blink_char_RXTX Register bits  : 127 
 @P: blink_char_RXTX DSP Blocks  : 0
 @P: blink_char_RXTX I/O primitives : 4
 @P:  CPU Time : 0h:00m:03s

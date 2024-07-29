@@ -21,26 +21,34 @@ Modules that may have changed as a result of file changes: 0
 MID:  lib.cell.view
 
 *******************************************************************
-Unmodified files: 14
+Unmodified files: 18
 FID:  path (timestamp)
 0        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\generic\smartfusion2.v (2024-01-04 13:11:02)
 1        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\vlog\hypermods.v (2024-01-04 13:04:40)
 2        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\vlog\scemi_objects.v (2024-01-04 13:04:40)
 3        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\vlog\scemi_pipes.svh (2024-01-04 13:04:40)
 4        C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\vlog\umr_capim.v (2024-01-04 13:08:34)
+14       C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v (2024-07-24 14:42:10)
+15       C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v (2024-07-24 14:42:10)
+16       C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v (2024-07-24 14:42:10)
 5        C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v (2024-07-03 13:50:42)
 6        C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp_pcie_hotreset.v (2024-07-03 13:50:42)
+17       C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v (2024-07-24 14:45:34)
 7        C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\SgCore\OSC\2.0.101\osc_comps.v (2024-07-03 13:50:44)
-8        C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX\blink_char_RXTX.v (2024-07-05 14:16:05)
-9        C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\CCC_0\blink_char_RXTX_sb_CCC_0_FCCC.v (2024-07-05 14:15:10)
-10       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v (2024-07-05 14:15:11)
-11       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\blink_char_RXTX_sb.v (2024-07-05 14:15:11)
-12       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS.v (2024-07-05 14:15:06)
-13       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS_syn.v (2024-07-05 14:15:06)
+8        C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX\blink_char_RXTX.v (2024-07-24 14:50:03)
+9        C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\CCC_0\blink_char_RXTX_sb_CCC_0_FCCC.v (2024-07-24 14:42:10)
+10       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v (2024-07-24 14:42:12)
+11       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\blink_char_RXTX_sb.v (2024-07-24 14:42:12)
+12       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS.v (2024-07-24 14:42:07)
+13       C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS_syn.v (2024-07-24 14:42:06)
 
 *******************************************************************
-Unchanged modules: 14
+Unchanged modules: 18
 MID:  lib.cell.view
+14       COREAPB3_LIB.COREAPB3_MUXPTOB3.verilog
+15       COREAPB3_LIB.CoreAPB3.verilog
+16       COREAPB3_LIB.coreapb3_iaddr_reg.verilog
+17       CORETIMER_LIB.CoreTimer.verilog
 0        work.CoreResetP.verilog
 1        work.MSS_005.verilog
 2        work.RCOSC_1MHZ.verilog

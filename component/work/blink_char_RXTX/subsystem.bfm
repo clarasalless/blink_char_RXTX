@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Microsemi SmartDesign Fri Jul  5 14:16:05 2024
+# Created by Microsemi SmartDesign Wed Jul 24 14:50:04 2024
 #
 # Syntax: 
 # ------- 
@@ -17,6 +17,7 @@
 # Define name and base address of each resource.
 #-----------------------------------------------------------
 
+memmap blink_char_RXTX_sb_0/CoreTimer_0_0 0x5000_0000;
 #-----------------------------------------------------------
 # Include resource scriptlets
 #-----------------------------------------------------------

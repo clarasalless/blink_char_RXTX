@@ -1,38 +1,38 @@
 {
 "Synplify Pro (R) Job Log" : {
-	"Date" : "22:01:19    05-Jul-2024",
+	"Date" : "14:50:25    24-Jul-2024",
 	"Working Directory" : "C:/Users/Clara/Documents/blink_char_RXTX/synthesis",
 	"Install" : "C:/Microchip/Libero_SoC_v2024.1/SynplifyPro"
 },
 "synthesis" :{
    "Job Flow" : "Sequential",
-   "Start Time" : "22:01:13",
-   "Runtime" : "06s",
-   "Executable Run Time" : "06s",
+   "Start Time" : "14:50:12",
+   "Runtime" : "13s",
+   "Executable Run Time" : "12s",
    "synthesis" : {
       "Job Flow" : "Sequential",
-      "Start Time" : "22:01:13",
-      "Runtime" : "06s",
-      "Executable Run Time" : "06s",
+      "Start Time" : "14:50:12",
+      "Runtime" : "13s",
+      "Executable Run Time" : "12s",
       "compile" : {
          "Job Flow" : "Sequential",
-         "Start Time" : "22:01:13",
-         "Runtime" : "03s",
-         "Executable Run Time" : "03s",
+         "Start Time" : "14:50:12",
+         "Runtime" : "08s",
+         "Executable Run Time" : "07s",
          "compile_flow" : {
             "Job Flow" : "Sequential",
-            "Start Time" : "22:01:13",
-            "Runtime" : "01s",
-            "Executable Run Time" : "01s",
+            "Start Time" : "14:50:12",
+            "Runtime" : "06s",
+            "Executable Run Time" : "05s",
             "compiler" : {
                "executable" : "bin64/c_hdl.exe",
                "Run Directory" : "C:/Users/Clara/Documents/blink_char_RXTX/synthesis",
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "22:01:13",
-               "Run Time" : "01s",
-               "Exe Run Time" : "01s",
+               "Run Start Time" : "14:50:12",
+               "Run Time" : "06s",
+               "Exe Run Time" : "05s",
                "Memory Usage" : "-",
                "Up-to-date (run skipped)" : "no"
             },
@@ -42,11 +42,11 @@
                "Run State" : "Complete",
                "Return Code" : "0",
                "Has Errors" : "no",
-               "Run Start Time" : "22:01:14",
+               "Run Start Time" : "14:50:18",
                "Run Time" : "00s",
                "Exe Run Time" : "00s",
                "Memory Usage" : "-",
-               "Up-to-date (run skipped)" : "yes"
+               "Up-to-date (run skipped)" : "no"
             }
          },
          "premap" : {
@@ -55,7 +55,7 @@
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "22:01:14",
+            "Run Start Time" : "14:50:18",
             "Run Time" : "02s",
             "Exe Run Time" : "02s",
             "Memory Usage" : "-",
@@ -64,18 +64,18 @@
       },
       "map" : {
          "Job Flow" : "Sequential",
-         "Start Time" : "22:01:16",
-         "Runtime" : "03s",
-         "Executable Run Time" : "03s",
+         "Start Time" : "14:50:20",
+         "Runtime" : "05s",
+         "Executable Run Time" : "05s",
          "fpga_mapper" : {
             "executable" : "bin64/m_generic.exe",
             "Run Directory" : "C:/Users/Clara/Documents/blink_char_RXTX/synthesis",
             "Run State" : "Complete",
             "Return Code" : "1",
             "Has Errors" : "no",
-            "Run Start Time" : "22:01:16",
-            "Run Time" : "03s",
-            "Exe Run Time" : "03s",
+            "Run Start Time" : "14:50:20",
+            "Run Time" : "05s",
+            "Exe Run Time" : "05s",
             "Memory Usage" : "-",
             "Up-to-date (run skipped)" : "no"
          }

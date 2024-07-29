@@ -1,25 +1,110 @@
 Selecting top level module blink_char_RXTX
+@N: CG775 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Component CoreAPB3 not found in library "work" or "__hyper__lib__", but found in library COREAPB3_LIB
+@N: CG775 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v":24:7:24:15|Component CoreTimer not found in library "work" or "__hyper__lib__", but found in library CORETIMER_LIB
 @N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS_syn.v":5:7:5:13|Synthesizing module MSS_005 in library work.
 Running optimization stage 1 on MSS_005 .......
-Finished optimization stage 1 on MSS_005 (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+Finished optimization stage 1 on MSS_005 (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
 @N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb_MSS\blink_char_RXTX_sb_MSS.v":9:7:9:28|Synthesizing module blink_char_RXTX_sb_MSS in library work.
 Running optimization stage 1 on blink_char_RXTX_sb_MSS .......
-Finished optimization stage 1 on blink_char_RXTX_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+Finished optimization stage 1 on blink_char_RXTX_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
 @N: CG364 :"C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\generic\smartfusion2.v":376:7:376:9|Synthesizing module VCC in library work.
 Running optimization stage 1 on VCC .......
-Finished optimization stage 1 on VCC (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+Finished optimization stage 1 on VCC (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
 @N: CG364 :"C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\generic\smartfusion2.v":372:7:372:9|Synthesizing module GND in library work.
 Running optimization stage 1 on GND .......
-Finished optimization stage 1 on GND (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+Finished optimization stage 1 on GND (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
 @N: CG364 :"C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\generic\smartfusion2.v":362:7:362:12|Synthesizing module CLKINT in library work.
 Running optimization stage 1 on CLKINT .......
-Finished optimization stage 1 on CLKINT (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+Finished optimization stage 1 on CLKINT (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
 @N: CG364 :"C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\generic\smartfusion2.v":729:7:729:9|Synthesizing module CCC in library work.
 Running optimization stage 1 on CCC .......
-Finished optimization stage 1 on CCC (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+Finished optimization stage 1 on CCC (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
 @N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\CCC_0\blink_char_RXTX_sb_CCC_0_FCCC.v":5:7:5:35|Synthesizing module blink_char_RXTX_sb_CCC_0_FCCC in library work.
 Running optimization stage 1 on blink_char_RXTX_sb_CCC_0_FCCC .......
-Finished optimization stage 1 on blink_char_RXTX_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+Finished optimization stage 1 on blink_char_RXTX_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+@N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3 in library COREAPB3_LIB.
+Running optimization stage 1 on COREAPB3_MUXPTOB3 .......
+Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 95MB peak: 95MB)
+@N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b010000
+	UPR_NIBBLE_POSN=4'b0011
+	FAMILY=32'b00000000000000000000000000010011
+	SYNC_RESET=32'b00000000000000000000000000000000
+	IADDR_NOTINUSE=32'b00000000000000000000000000000000
+	IADDR_EXTERNAL=32'b00000000000000000000000000000001
+	IADDR_SLOT0=32'b00000000000000000000000000000010
+	IADDR_SLOT1=32'b00000000000000000000000000000011
+	IADDR_SLOT2=32'b00000000000000000000000000000100
+	IADDR_SLOT3=32'b00000000000000000000000000000101
+	IADDR_SLOT4=32'b00000000000000000000000000000110
+	IADDR_SLOT5=32'b00000000000000000000000000000111
+	IADDR_SLOT6=32'b00000000000000000000000000001000
+	IADDR_SLOT7=32'b00000000000000000000000000001001
+	IADDR_SLOT8=32'b00000000000000000000000000001010
+	IADDR_SLOT9=32'b00000000000000000000000000001011
+	IADDR_SLOT10=32'b00000000000000000000000000001100
+	IADDR_SLOT11=32'b00000000000000000000000000001101
+	IADDR_SLOT12=32'b00000000000000000000000000001110
+	IADDR_SLOT13=32'b00000000000000000000000000001111
+	IADDR_SLOT14=32'b00000000000000000000000000010000
+	IADDR_SLOT15=32'b00000000000000000000000000010001
+	SL0=16'b0000000000000001
+	SL1=16'b0000000000000000
+	SL2=16'b0000000000000000
+	SL3=16'b0000000000000000
+	SL4=16'b0000000000000000
+	SL5=16'b0000000000000000
+	SL6=16'b0000000000000000
+	SL7=16'b0000000000000000
+	SL8=16'b0000000000000000
+	SL9=16'b0000000000000000
+	SL10=16'b0000000000000000
+	SL11=16'b0000000000000000
+	SL12=16'b0000000000000000
+	SL13=16'b0000000000000000
+	SL14=16'b0000000000000000
+	SL15=16'b0000000000000000
+	SC=16'b0000000000000000
+	SC_qual=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+@W: CG360 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":244:12:244:20|Removing wire IA_PRDATA, as there is no assignment to it.
+Running optimization stage 1 on CoreAPB3_Z1 .......
+Finished optimization stage 1 on CoreAPB3_Z1 (CPU Time 0h:00m:00s, Memory Used current: 95MB peak: 95MB)
 @N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":23:7:23:16|Synthesizing module CoreResetP in library work.
 
 	FAMILY=32'b00000000000000000000000000010011
@@ -58,8 +143,8 @@ Finished optimization stage 1 on blink_char_RXTX_sb_CCC_0_FCCC (CPU Time 0h:00m:
 	S4=32'b00000000000000000000000000000100
 	S5=32'b00000000000000000000000000000101
 	S6=32'b00000000000000000000000000000110
-   Generated name = CoreResetP_Z1
-Running optimization stage 1 on CoreResetP_Z1 .......
+   Generated name = CoreResetP_Z2
+Running optimization stage 1 on CoreResetP_Z2 .......
 @W: CL169 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":1613:4:1613:9|Pruning unused register count_ddr[13:0]. Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":1581:4:1581:9|Pruning unused register count_sdif3[12:0]. Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":1549:4:1549:9|Pruning unused register count_sdif2[12:0]. Make sure that there are no unused intermediate registers.
@@ -91,43 +176,60 @@ Running optimization stage 1 on CoreResetP_Z1 .......
 @W: CL169 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":1433:4:1433:9|Pruning unused register sm2_state[2:0]. Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":783:4:783:9|Pruning unused register sm2_areset_n_q1. Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":783:4:783:9|Pruning unused register sm2_areset_n_clk_base. Make sure that there are no unused intermediate registers.
-Finished optimization stage 1 on CoreResetP_Z1 (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+Finished optimization stage 1 on CoreResetP_Z2 (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 96MB)
+@N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v":24:7:24:15|Synthesizing module CoreTimer in library CORETIMER_LIB.
+
+	WIDTH=32'b00000000000000000000000000100000
+	INTACTIVEH=32'b00000000000000000000000000000001
+	FAMILY=32'b00000000000000000000000000010011
+	SYNC_RESET=32'b00000000000000000000000000000000
+   Generated name = CoreTimer_32s_1s_19s_0s
+@N: CG179 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v":273:37:273:41|Removing redundant assignment.
+Running optimization stage 1 on CoreTimer_32s_1s_19s_0s .......
+@W: CL190 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v":146:4:146:9|Optimizing register bit CtrlReg[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v":146:4:146:9|Optimizing register bit CtrlReg[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v":146:4:146:9|Optimizing register bit CtrlReg[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v":146:4:146:9|Optimizing register bit CtrlReg[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v":146:4:146:9|Pruning register bits 6 to 3 of CtrlReg[6:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 1 on CoreTimer_32s_1s_19s_0s (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 96MB)
 @N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":51:7:51:24|Synthesizing module RCOSC_25_50MHZ_FAB in library work.
 Running optimization stage 1 on RCOSC_25_50MHZ_FAB .......
-Finished optimization stage 1 on RCOSC_25_50MHZ_FAB (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+Finished optimization stage 1 on RCOSC_25_50MHZ_FAB (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 96MB)
 @N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":11:7:11:20|Synthesizing module RCOSC_25_50MHZ in library work.
 Running optimization stage 1 on RCOSC_25_50MHZ .......
-Finished optimization stage 1 on RCOSC_25_50MHZ (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+Finished optimization stage 1 on RCOSC_25_50MHZ (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 96MB)
 @N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v":5:7:5:37|Synthesizing module blink_char_RXTX_sb_FABOSC_0_OSC in library work.
 Running optimization stage 1 on blink_char_RXTX_sb_FABOSC_0_OSC .......
 @W: CL318 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v":17:7:17:20|*Output RCOSC_1MHZ_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v":18:7:18:20|*Output RCOSC_1MHZ_O2F has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v":19:7:19:16|*Output XTLOSC_CCC has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v":20:7:20:16|*Output XTLOSC_O2F has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on blink_char_RXTX_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+Finished optimization stage 1 on blink_char_RXTX_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 101MB peak: 101MB)
 @N: CG364 :"C:\Microchip\Libero_SoC_v2024.1\SynplifyPro\lib\generic\smartfusion2.v":720:7:720:14|Synthesizing module SYSRESET in library work.
 Running optimization stage 1 on SYSRESET .......
-Finished optimization stage 1 on SYSRESET (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+Finished optimization stage 1 on SYSRESET (CPU Time 0h:00m:00s, Memory Used current: 101MB peak: 101MB)
 @N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\blink_char_RXTX_sb.v":9:7:9:24|Synthesizing module blink_char_RXTX_sb in library work.
 Running optimization stage 1 on blink_char_RXTX_sb .......
-Finished optimization stage 1 on blink_char_RXTX_sb (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+Finished optimization stage 1 on blink_char_RXTX_sb (CPU Time 0h:00m:00s, Memory Used current: 101MB peak: 101MB)
 @N: CG364 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX\blink_char_RXTX.v":9:7:9:21|Synthesizing module blink_char_RXTX in library work.
 Running optimization stage 1 on blink_char_RXTX .......
-Finished optimization stage 1 on blink_char_RXTX (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+Finished optimization stage 1 on blink_char_RXTX (CPU Time 0h:00m:00s, Memory Used current: 101MB peak: 101MB)
 Running optimization stage 2 on blink_char_RXTX .......
-Finished optimization stage 2 on blink_char_RXTX (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 93MB)
+Finished optimization stage 2 on blink_char_RXTX (CPU Time 0h:00m:00s, Memory Used current: 100MB peak: 101MB)
 Running optimization stage 2 on blink_char_RXTX_sb .......
-Finished optimization stage 2 on blink_char_RXTX_sb (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Finished optimization stage 2 on blink_char_RXTX_sb (CPU Time 0h:00m:00s, Memory Used current: 100MB peak: 101MB)
 Running optimization stage 2 on SYSRESET .......
-Finished optimization stage 2 on SYSRESET (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 96MB)
+Finished optimization stage 2 on SYSRESET (CPU Time 0h:00m:00s, Memory Used current: 100MB peak: 101MB)
 Running optimization stage 2 on blink_char_RXTX_sb_FABOSC_0_OSC .......
 @N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\work\blink_char_RXTX_sb\FABOSC_0\blink_char_RXTX_sb_FABOSC_0_OSC.v":14:7:14:9|Input XTL is unused.
-Finished optimization stage 2 on blink_char_RXTX_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 96MB)
+Finished optimization stage 2 on blink_char_RXTX_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 100MB peak: 101MB)
 Running optimization stage 2 on RCOSC_25_50MHZ .......
-Finished optimization stage 2 on RCOSC_25_50MHZ (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 96MB)
+Finished optimization stage 2 on RCOSC_25_50MHZ (CPU Time 0h:00m:00s, Memory Used current: 100MB peak: 101MB)
 Running optimization stage 2 on RCOSC_25_50MHZ_FAB .......
-Finished optimization stage 2 on RCOSC_25_50MHZ_FAB (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 96MB)
-Running optimization stage 2 on CoreResetP_Z1 .......
+Finished optimization stage 2 on RCOSC_25_50MHZ_FAB (CPU Time 0h:00m:00s, Memory Used current: 100MB peak: 101MB)
+Running optimization stage 2 on CoreTimer_32s_1s_19s_0s .......
+Finished optimization stage 2 on CoreTimer_32s_1s_19s_0s (CPU Time 0h:00m:00s, Memory Used current: 106MB peak: 108MB)
+Running optimization stage 2 on CoreResetP_Z2 .......
 @W: CL177 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":963:4:963:9|Sharing sequential element sdif0_spll_lock_q2 and merging sdif3_spll_lock_q2. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL177 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":963:4:963:9|Sharing sequential element sdif1_spll_lock_q2 and merging sdif3_spll_lock_q2. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL177 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":963:4:963:9|Sharing sequential element sdif2_spll_lock_q2 and merging sdif3_spll_lock_q2. Add a syn_preserve attribute to the element to prevent sharing.
@@ -203,21 +305,73 @@ State machine has 7 reachable states with original encodings of:
 @N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":119:20:119:40|Input SOFT_SDIF3_CORE_RESET is unused.
 @N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":123:20:123:42|Input SOFT_SDIF0_0_CORE_RESET is unused.
 @N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v":124:20:124:42|Input SOFT_SDIF0_1_CORE_RESET is unused.
-Finished optimization stage 2 on CoreResetP_Z1 (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+Finished optimization stage 2 on CoreResetP_Z2 (CPU Time 0h:00m:00s, Memory Used current: 106MB peak: 108MB)
+Running optimization stage 2 on CoreAPB3_Z1 .......
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":72:36:72:40|Input IADDR is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":73:13:73:19|Input PRESETN is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":74:13:74:16|Input PCLK is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":105:18:105:25|Input PRDATAS1 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":106:18:106:25|Input PRDATAS2 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":107:18:107:25|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":108:18:108:25|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":109:18:109:25|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":110:18:110:25|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":111:18:111:25|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":112:18:112:25|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":113:18:113:25|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":114:18:114:26|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":115:18:115:26|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":116:18:116:26|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":117:18:117:26|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":118:18:118:26|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":119:18:119:26|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":122:13:122:20|Input PREADYS1 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":123:13:123:20|Input PREADYS2 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":124:13:124:20|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":125:13:125:20|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":126:13:126:20|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":127:13:127:20|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":128:13:128:20|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":129:13:129:20|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":130:13:130:20|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":131:13:131:21|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":132:13:132:21|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":133:13:133:21|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":134:13:134:21|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":135:13:135:21|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":136:13:136:21|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":139:13:139:21|Input PSLVERRS1 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":140:13:140:21|Input PSLVERRS2 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":141:13:141:21|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":142:13:142:21|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":143:13:143:21|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":144:13:144:21|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":145:13:145:21|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":146:13:146:21|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":147:13:147:21|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":148:13:148:22|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":149:13:149:22|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":150:13:150:22|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\Clara\Documents\blink_char_RXTX\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused.
+Finished optimization stage 2 on CoreAPB3_Z1 (CPU Time 0h:00m:00s, Memory Used current: 106MB peak: 108MB)
+Running optimization stage 2 on COREAPB3_MUXPTOB3 .......
+Finished optimization stage 2 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 108MB)
 Running optimization stage 2 on blink_char_RXTX_sb_CCC_0_FCCC .......
-Finished optimization stage 2 on blink_char_RXTX_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+Finished optimization stage 2 on blink_char_RXTX_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 108MB)
 Running optimization stage 2 on CCC .......
-Finished optimization stage 2 on CCC (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+Finished optimization stage 2 on CCC (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 108MB)
 Running optimization stage 2 on CLKINT .......
-Finished optimization stage 2 on CLKINT (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+Finished optimization stage 2 on CLKINT (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 108MB)
 Running optimization stage 2 on GND .......
-Finished optimization stage 2 on GND (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+Finished optimization stage 2 on GND (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 108MB)
 Running optimization stage 2 on VCC .......
-Finished optimization stage 2 on VCC (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+Finished optimization stage 2 on VCC (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 108MB)
 Running optimization stage 2 on blink_char_RXTX_sb_MSS .......
-Finished optimization stage 2 on blink_char_RXTX_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+Finished optimization stage 2 on blink_char_RXTX_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 108MB)
 Running optimization stage 2 on MSS_005 .......
-Finished optimization stage 2 on MSS_005 (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+Finished optimization stage 2 on MSS_005 (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 108MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================

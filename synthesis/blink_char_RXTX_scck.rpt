@@ -12,7 +12,7 @@ Hostname: DESKTOP-L1LCKI7
 
 Implementation : synthesis
 
-# Written on Tue Jul  9 17:27:20 2024
+# Written on Wed Jul 24 14:59:53 2024
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\synthesis.fdc"
@@ -32,7 +32,7 @@ Clock Summary
           Start                                                                 Requested     Requested     Clock        Clock          Clock
 Level     Clock                                                                 Frequency     Period        Type         Group          Load 
 ---------------------------------------------------------------------------------------------------------------------------------------------
-0 -       blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     10.000        inferred     (multiple)     36   
+0 -       blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     10.000        inferred     (multiple)     154  
                                                                                                                                              
 0 -       blink_char_RXTX_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     100.0 MHz     10.000        inferred     (multiple)     15   
 =============================================================================================================================================
@@ -41,10 +41,10 @@ Level     Clock                                                                 
 Clock Load Summary
 ******************
 
-                                                                      Clock     Source                                                                    Clock Pin                                                     Non-clock Pin     Non-clock Pin                                                           
-Clock                                                                 Load      Pin                                                                       Seq Example                                                   Seq Example       Comb Example                                                            
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock                  36        blink_char_RXTX_sb_0.CCC_0.CCC_INST.GL0(CCC)                              blink_char_RXTX_sb_0.CORERESETP_0.CONFIG1_DONE_clk_base.C     -                 blink_char_RXTX_sb_0.CCC_0.GL0_INST.I(BUFG)                             
-                                                                                                                                                                                                                                                                                                                  
-blink_char_RXTX_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     15        blink_char_RXTX_sb_0.FABOSC_0.I_RCOSC_25_50MHZ.CLKOUT(RCOSC_25_50MHZ)     blink_char_RXTX_sb_0.CORERESETP_0.release_sdif0_core.C        -                 blink_char_RXTX_sb_0.FABOSC_0.I_RCOSC_25_50MHZ_FAB.A(RCOSC_25_50MHZ_FAB)
-==================================================================================================================================================================================================================================================================================================================
+                                                                      Clock     Source                                                                    Clock Pin                                                  Non-clock Pin     Non-clock Pin                                                           
+Clock                                                                 Load      Pin                                                                       Seq Example                                                Seq Example       Comb Example                                                            
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+blink_char_RXTX_sb_CCC_0_FCCC|GL0_net_inferred_clock                  154       blink_char_RXTX_sb_0.CCC_0.CCC_INST.GL0(CCC)                              blink_char_RXTX_sb_0.CoreTimer_0_0.CtrlReg[2:0].C          -                 blink_char_RXTX_sb_0.CCC_0.GL0_INST.I(BUFG)                             
+                                                                                                                                                                                                                                                                                                               
+blink_char_RXTX_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     15        blink_char_RXTX_sb_0.FABOSC_0.I_RCOSC_25_50MHZ.CLKOUT(RCOSC_25_50MHZ)     blink_char_RXTX_sb_0.CORERESETP_0.release_sdif0_core.C     -                 blink_char_RXTX_sb_0.FABOSC_0.I_RCOSC_25_50MHZ_FAB.A(RCOSC_25_50MHZ_FAB)
+===============================================================================================================================================================================================================================================================================================================

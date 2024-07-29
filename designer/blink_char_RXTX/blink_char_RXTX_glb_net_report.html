@@ -31,7 +31,7 @@
     <body>
         <h1 align="center">Global Net Report</h1>
         <p>Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)</p>
-        <p>Date: Tue Jul  9 17:27:57 2024
+        <p>Date: Wed Jul 24 15:00:40 2024
 </p>
         <h2>Global Nets Information</h2>
         <table cellpadding="4">
@@ -44,17 +44,44 @@
             </tr>
             <tr>
                 <td>1</td>
+                <td>GB[3] </td>
+                <td>(221, 30)</td>
+                <td>blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn</td>
+                <td>128</td>
+            </tr>
+            <tr>
+                <td>2</td>
                 <td>GB[1] </td>
                 <td>(219, 30)</td>
-                <td>blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn</td>
-                <td>1</td>
+                <td>blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIKMCH1/U0_YNn_GSouth</td>
+                <td>118</td>
             </tr>
         </table>
         <p/>
         <h2>I/O to GB Connections</h2>
         <p>(none)</p>
         <h2>Fabric to GB Connections</h2>
-        <p>(none)</p>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> To </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int:Q</td>
+                <td>(384, 37)</td>
+                <td>GB[1] </td>
+                <td>blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int_0</td>
+                <td>ROUTED</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p/>
         <h2>CCC to GB Connections</h2>
         <table cellpadding="4">
             <tr>
@@ -71,8 +98,8 @@
                 <td>1</td>
                 <td>blink_char_RXTX_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0</td>
                 <td>CCC-NE1 (390, 44)</td>
-                <td>GL0 =&gt; GL1</td>
-                <td>GB[1] </td>
+                <td>GL0 =&gt; GL3</td>
+                <td>GB[3] </td>
                 <td>blink_char_RXTX_sb_0/CCC_0/GL0_net</td>
                 <td>HARDWIRED</td>
                 <td>1</td>
@@ -119,13 +146,83 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>GB[1] </td>
-                <td>(219, 30)</td>
+                <td>GB[3] </td>
+                <td>(221, 30)</td>
                 <td>blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn</td>
+                <td>128</td>
                 <td>1</td>
+                <td>(218, 33)</td>
+                <td>4</td>
+            </tr>
+            <tr>
                 <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(218, 36)</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
                 <td>(218, 54)</td>
                 <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>GB[1] </td>
+                <td>(219, 30)</td>
+                <td>blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIKMCH1/U0_YNn_GSouth</td>
+                <td>118</td>
+                <td>1</td>
+                <td>(218, 9)</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(218, 12)</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(218, 15)</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(218, 18)</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5</td>
+                <td>(218, 21)</td>
+                <td>26</td>
             </tr>
         </table>
         <p/>

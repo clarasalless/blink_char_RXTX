@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/Clara/Documents/blink_char_RXTX/component/work/blink_char_RXTX</location>
-    <state>GENERATED ( Tue Jul  9 17:29:56 2024 )</state>
+    <state>GENERATED ( Wed Jul 24 15:57:26 2024 )</state>
     <swide-toolchain>SoftConsole workspace generated to C:\Users\Clara\Documents\blink_char_RXTX\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -22,8 +22,8 @@
     <description>The SmartDesign blink_char_RXTX contains the following Initiators under its hierarchy</description>
     <subsystems>
       <subsystem>
-        <name>CM3</name>
-        <Initiator>CM3</Initiator>
+        <name>blink_char_RXTX_sb_0/ blink_char_RXTX_sb_MSS_0/ CM3</name>
+        <Initiator>blink_char_RXTX_sb_0/ blink_char_RXTX_sb_MSS_0/ CM3</Initiator>
         <addressNames>
           <count>1</count>
           <name>
@@ -91,6 +91,134 @@
           <fullAddressSpace>0x6000_0000 - 0x6001_FFFF</fullAddressSpace>
           <range>0x0002_0000</range>
           <Size>128KB</Size>
+        </slave>
+        <slave>
+          <name>blink_char_RXTX_sb_0/ CoreTimer_0_0:APBslave</name>
+          <fullPinName>blink_char_RXTX_sb_0/CoreTimer_0_0:APBslave</fullPinName>
+          <remapAddress>0x5000_0000</remapAddress>
+          <combinedAddressSpace>0x5000_0000 - 0x5000_0FFF</combinedAddressSpace>
+          <remapAddress>0x3000_0000</remapAddress>
+          <combinedAddressSpace>0x3000_0000 - 0x3000_0FFF</combinedAddressSpace>
+          <range>0x0000_1000</range>
+          <Size>4KB</Size>
+          <memoryMap>
+            <name>RegisterMap</name>
+            <addressBlock>
+              <baseAddress>0x0</baseAddress>
+              <range format="long">0x1000</range>
+              <width format="long" id="width">32</width>
+              <register>
+                <name>TimerLoad</name>
+                <addressOffset>0x00</addressOffset>
+                <absoluteAddress>0x500000000</absoluteAddress>
+                <size>32</size>
+                <access>R/W</access>
+                <resetValue>0x00000000</resetValue>
+                <field>
+                  <name>LoadValue</name>
+                  <bitNumber>31:0</bitNumber>
+                  <access>R/W</access>
+                  <description>Load value for counter</description>
+                </field>
+              </register>
+              <register>
+                <name>TimerValue</name>
+                <addressOffset>0x04</addressOffset>
+                <absoluteAddress>0x500000004</absoluteAddress>
+                <size>32</size>
+                <access>R</access>
+                <resetValue>0xFFFFFFFF</resetValue>
+                <field>
+                  <name>CurrentValue</name>
+                  <bitNumber>31:0</bitNumber>
+                  <access>R</access>
+                  <description>Current value of counter</description>
+                </field>
+              </register>
+              <register>
+                <name>TimerControl</name>
+                <addressOffset>0x08</addressOffset>
+                <absoluteAddress>0x500000008</absoluteAddress>
+                <size>32</size>
+                <access>R/W</access>
+                <resetValue>0x00</resetValue>
+                <field>
+                  <name>TimerEnable</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>Enable bit for timer</description>
+                </field>
+                <field>
+                  <name>InterruptEnable</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>Interrupt enable bit for timer</description>
+                </field>
+                <field>
+                  <name>TimerMode</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>Selects continuous or one-shot operation</description>
+                </field>
+              </register>
+              <register>
+                <name>TimerPrescale</name>
+                <addressOffset>0x0C</addressOffset>
+                <absoluteAddress>0x50000000C</absoluteAddress>
+                <size>32</size>
+                <access>W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>Prescale</name>
+                  <bitNumber>3:0</bitNumber>
+                  <access>W</access>
+                  <description>Determines effective clock rate for counter relative to PCLK</description>
+                </field>
+              </register>
+              <register>
+                <name>TimerIntClr</name>
+                <addressOffset>0x10</addressOffset>
+                <absoluteAddress>0x500000010</absoluteAddress>
+                <size>32</size>
+                <access>W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>TimerIntClr</name>
+                  <bitNumber>31:0</bitNumber>
+                  <access>W</access>
+                  <description>Any write to this location will clear the interrupt</description>
+                </field>
+              </register>
+              <register>
+                <name>TimerRIS</name>
+                <addressOffset>0x14</addressOffset>
+                <absoluteAddress>0x500000014</absoluteAddress>
+                <size>32</size>
+                <access>R</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>RawTimerInterrupt</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R</access>
+                  <description>Raw timer interrupt status, active high</description>
+                </field>
+              </register>
+              <register>
+                <name>TimerMIS</name>
+                <addressOffset>0x18</addressOffset>
+                <absoluteAddress>0x500000018</absoluteAddress>
+                <size>32</size>
+                <access>R</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>TimerInterrupt</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R</access>
+                  <description>Timer interrupt status, active high</description>
+                </field>
+              </register>
+            </addressBlock>
+          </memoryMap>
         </slave>
         <slave>
           <name>CACHE_BACKDOOR</name>

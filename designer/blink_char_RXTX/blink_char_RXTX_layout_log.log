@@ -17,7 +17,7 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 2024.1.0 
-Design: blink_char_RXTX                 Started: Tue Jul  9 17:27:54 2024
+Design: blink_char_RXTX                 Started: Wed Jul 24 15:00:35 2024
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -33,32 +33,32 @@ Improvement              : 0 seconds
 Placer completed successfully.
 
 Design: blink_char_RXTX                 
-Finished: Tue Jul  9 17:27:57 2024
-Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
-Total Memory Usage: 98.8 Mbytes
+Finished: Wed Jul 24 15:00:39 2024
+Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
+Total Memory Usage: 99.9 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTXStarted: Tue Jul  9 17:28:01 2024
+Design: C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTXStarted: Wed Jul 24 15:00:42 2024
 
 
 Router completed successfully.
 
 Design: C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTX
-Finished: Tue Jul  9 17:28:03 2024
-Total CPU Time:     00:00:01            Total Elapsed Time: 00:00:02
-Total Memory Usage: 258.2 Mbytes
+Finished: Wed Jul 24 15:00:45 2024
+Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
+Total Memory Usage: 258.0 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
 +---------------+------+-------+------------+
 | Type          | Used | Total | Percentage |
 +---------------+------+-------+------------+
-| 4LUT          | 0    | 6060  | 0.00       |
-| DFF           | 0    | 6060  | 0.00       |
+| 4LUT          | 211  | 6060  | 3.48       |
+| DFF           | 127  | 6060  | 2.10       |
 | I/O Register  | 0    | 252   | 0.00       |
-| Logic Element | 0    | 6060  | 0.00       |
+| Logic Element | 229  | 6060  | 3.78       |
 +---------------+------+-------+------------+
 
 I/O Placement

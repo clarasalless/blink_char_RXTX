@@ -1,6 +1,6 @@
 Configuration Report for MSS, SERDES(s), Fabric DDR and Fabric CCC(s)
 Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)
-Date: Tue Jul  9 17:28:33 2024
+Date: Wed Jul 24 15:00:52 2024
 
 blink_char_RXTX_sb_0/CCC_0/CCC_INST/INST_CCC_IP
 +-------------------+--------------------+---------------+-------+
@@ -21,11 +21,11 @@ blink_char_RXTX_sb_0/CCC_0/CCC_INST/INST_CCC_IP
 | FCCC_GPMUX3_CR    | SEL_GPMUX3[4:0]    | INIT[81:77]   | 5'h18 |
 | FCCC_NGMUX0_CR0   | SELGL[4:0]         | INIT[86:82]   | 5'h18 |
 | FCCC_NGMUX0_CR1   | SELGL[9:5]         | INIT[91:87]   | 5'h18 |
-| FCCC_NGMUX1_CR0   | SELGL[14:10]       | INIT[96:92]   | 5'h7  |
+| FCCC_NGMUX1_CR0   | SELGL[14:10]       | INIT[96:92]   | 5'h18 |
 | FCCC_NGMUX1_CR1   | SELGL[19:15]       | INIT[101:97]  | 5'h18 |
 | FCCC_NGMUX2_CR0   | SELGL[24:20]       | INIT[106:102] | 5'h18 |
 | FCCC_NGMUX2_CR1   | SELGL[29:25]       | INIT[111:107] | 5'h18 |
-| FCCC_NGMUX3_CR0   | SELGL[34:30]       | INIT[116:112] | 5'h18 |
+| FCCC_NGMUX3_CR0   | SELGL[34:30]       | INIT[116:112] | 5'h7  |
 | FCCC_NGMUX3_CR1   | SELGL[39:35]       | INIT[121:117] | 5'h18 |
 | FCCC_GPD0_SYNC_CR | RESET_GENEN[0]     | INIT[122:122] | 1'h0  |
 | FCCC_GPD1_SYNC_CR | RESET_GENEN[1]     | INIT[123:123] | 1'h0  |
@@ -284,16 +284,16 @@ blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_005_IP
 | MAC_CONFIG              | ETH_LINE_SPEED              | INIT[538:537]   | 2'h0         | INIT[61]  | 1             |
 | MAC_CONFIG              | ETH_PHY_MODE                | INIT[541:539]   | 3'h0         | INIT[61]  | 1             |
 | MAC_CONFIG              | RGMII_TXC_DELAY_SEL         | INIT[545:542]   | 4'h0         | INIT[61]  | 1             |
-| MSSDDR_PLL_STATUS_LOW   | FACC_PLL_DIVR               | INIT[551:546]   | 6'h00        | INIT[62]  | 1             |
-| MSSDDR_PLL_STATUS_LOW   | FACC_PLL_DIVF               | INIT[561:552]   | 10'h007      | INIT[62]  | 1             |
+| MSSDDR_PLL_STATUS_LOW   | FACC_PLL_DIVR               | INIT[551:546]   | 6'h01        | INIT[62]  | 1             |
+| MSSDDR_PLL_STATUS_LOW   | FACC_PLL_DIVF               | INIT[561:552]   | 10'h001      | INIT[62]  | 1             |
 | MSSDDR_PLL_STATUS_LOW   | FACC_PLL_DIVQ               | INIT[564:562]   | 3'h3         | INIT[62]  | 1             |
-| MSSDDR_PLL_STATUS_LOW   | FACC_PLL_RANGE              | INIT[568:565]   | 4'hA         | INIT[62]  | 1             |
+| MSSDDR_PLL_STATUS_LOW   | FACC_PLL_RANGE              | INIT[568:565]   | 4'h9         | INIT[62]  | 1             |
 | MSSDDR_PLL_STATUS_LOW   | FACC_PLL_LOCKWIN            | INIT[571:569]   | 3'h4         | INIT[62]  | 1             |
 | MSSDDR_PLL_STATUS_LOW   | FACC_PLL_LOCKCNT            | INIT[575:572]   | 4'h0         | INIT[62]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_BYPASS             | INIT[576:576]   | 1'h0         | INIT[63]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_MODE_1V2           | INIT[577:577]   | 1'h1         | INIT[63]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_MODE_3V3           | INIT[578:578]   | 1'h1         | INIT[63]  | 1             |
-| MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_FSE                | INIT[579:579]   | 1'h1         | INIT[63]  | 1             |
+| MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_FSE                | INIT[579:579]   | 1'h0         | INIT[63]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_PD                 | INIT[580:580]   | 1'h0         | INIT[63]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_SSE                | INIT[581:581]   | 1'h0         | INIT[63]  | 1             |
 | MSSDDR_PLL_STATUS_HIGH  | FACC_PLL_SSMD               | INIT[583:582]   | 2'h0         | INIT[63]  | 1             |
@@ -307,7 +307,7 @@ blink_char_RXTX_sb_0/blink_char_RXTX_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_005_IP
 | MSSDDR_FACC_CONFIG_1    | FIC32_0_DIVISOR             | INIT[604:602]   | 3'h0         | INIT[70]  | 1             |
 | MSSDDR_FACC_CONFIG_1    | FIC32_1_DIVISOR             | INIT[607:605]   | 3'h0         | INIT[71]  | 1             |
 | MSSDDR_FACC_CONFIG_1    | FIC64_DIVISOR               | INIT[610:608]   | 3'h0         | INIT[72]  | 1             |
-| MSSDDR_FACC_CONFIG_1    | BASE_DIVISOR                | INIT[613:611]   | 3'h6         | INIT[73]  | 1             |
+| MSSDDR_FACC_CONFIG_1    | BASE_DIVISOR                | INIT[613:611]   | 3'h0         | INIT[73]  | 1             |
 | MSSDDR_FACC_CONFIG_1    | PERSIST_CC                  | INIT[614:614]   | 1'h1         | INIT[74]  | 1             |
 | MSSDDR_FACC_CONFIG_1    | CONTROLLER_PLL_INIT         | INIT[615:615]   | 1'h1         | INIT[75]  | 1             |
 | MSSDDR_FACC_CONFIG_1    | FACC_FAB_REF_SEL            | INIT[616:616]   | 1'h1         | INIT[76]  | 1             |

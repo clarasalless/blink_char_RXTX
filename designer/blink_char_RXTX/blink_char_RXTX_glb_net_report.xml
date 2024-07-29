@@ -3,7 +3,7 @@
 <doc>
 <title>Global Net Report</title>
 <text>Microchip Technology Inc. - Microchip Libero Software Release v2024.1 (Version 2024.1.0.3)</text>
-<text>Date: Tue Jul  9 17:27:57 2024
+<text>Date: Wed Jul 24 15:00:40 2024
 </text>
 <section>
 <name>Global Nets Information</name>
@@ -17,10 +17,17 @@
 </header>
 <row>
  <cell>1</cell>
+ <cell>GB[3] </cell>
+ <cell>(221, 30)</cell>
+ <cell>blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn</cell>
+ <cell>128</cell>
+</row>
+<row>
+ <cell>2</cell>
  <cell>GB[1] </cell>
  <cell>(219, 30)</cell>
- <cell>blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn</cell>
- <cell>1</cell>
+ <cell>blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIKMCH1/U0_YNn_GSouth</cell>
+ <cell>118</cell>
 </row>
 </table>
 <text></text>
@@ -31,7 +38,27 @@
 </section>
 <section>
 <name>Fabric to GB Connections</name>
-<text>(none)</text>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> From Location </cell>
+ <cell> To </cell>
+ <cell> Net Name </cell>
+ <cell> Net Type </cell>
+ <cell> Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int:Q</cell>
+ <cell>(384, 37)</cell>
+ <cell>GB[1] </cell>
+ <cell>blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int_0</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+</table>
+<text></text>
 </section>
 <section>
 <name>CCC to GB Connections</name>
@@ -50,8 +77,8 @@
  <cell>1</cell>
  <cell>blink_char_RXTX_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0</cell>
  <cell>CCC-NE1 (390, 44)</cell>
- <cell>GL0 =&gt; GL1</cell>
- <cell>GB[1] </cell>
+ <cell>GL0 =&gt; GL3</cell>
+ <cell>GB[3] </cell>
  <cell>blink_char_RXTX_sb_0/CCC_0/GL0_net</cell>
  <cell>HARDWIRED</cell>
  <cell>1</cell>
@@ -104,13 +131,83 @@
 </header>
 <row>
  <cell>1</cell>
- <cell>GB[1] </cell>
- <cell>(219, 30)</cell>
+ <cell>GB[3] </cell>
+ <cell>(221, 30)</cell>
  <cell>blink_char_RXTX_sb_0/CCC_0/GL0_INST/U0_YNn</cell>
+ <cell>128</cell>
  <cell>1</cell>
+ <cell>(218, 33)</cell>
+ <cell>4</cell>
+</row>
+<row>
  <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(218, 36)</cell>
+ <cell>5</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
  <cell>(218, 54)</cell>
  <cell>1</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>GB[1] </cell>
+ <cell>(219, 30)</cell>
+ <cell>blink_char_RXTX_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIKMCH1/U0_YNn_GSouth</cell>
+ <cell>118</cell>
+ <cell>1</cell>
+ <cell>(218, 9)</cell>
+ <cell>10</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(218, 12)</cell>
+ <cell>20</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(218, 15)</cell>
+ <cell>33</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(218, 18)</cell>
+ <cell>29</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(218, 21)</cell>
+ <cell>26</cell>
 </row>
 </table>
 <text></text>
