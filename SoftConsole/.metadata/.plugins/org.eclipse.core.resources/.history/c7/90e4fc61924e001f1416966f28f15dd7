@@ -11,7 +11,6 @@
 #include "CMSIS/system_m2sxxx.h"
 #include "bibliotecas/protocol.h"
 #include "bibliotecas/ring_buffer.h"
-#include "bibliotecas/timer_utils.h"
 
 /*==============================================================================
   Private functions.
@@ -20,7 +19,8 @@
 // functions
 static void delay(void);
 void Toggle_GPIO_Pin(uint8_t GPIO_MASK);
-int contador = 0;
+int count = 0;
+//uint32_t tim_count;
 
 /*==============================================================================
  * main() function.
@@ -34,9 +34,10 @@ int main()
 
 	RingBuffer rBuff;
 
-	uint32_t tick;
-
 	initBuffer(&rBuff);
+
+//	int element;
+//	removeElement(&rBuff, &element);
 
     /*
      * Initialize MSS GPIOs.
@@ -54,8 +55,9 @@ int main()
 
 
 //    Configurando o timer
-    Timer_init();
-    tick = Timer_get_tick();
+    MSS_TIM1_enable_irq();
+    MSS_TIM1_load_immediate(50000);
+    MSS_TIM1_start();
 
     /*
      * Infinite loop.
@@ -66,8 +68,12 @@ int main()
 //    	Transmitindo a mensagem
     	MSS_UART_polled_tx(&g_mss_uart0, &message, 1);
     	Toggle_GPIO_Pin(MSS_GPIO_0_MASK);
-    	Timer_delay_ms(1000);
-    	tick = Timer_get_tick();
+    	int count = 10;
+    	while(count > 0)
+    	{
+//    		delay();
+    		count--;
+    	}
 
 //    	Recebendo a mensagem
     	while(MSS_UART_get_rx(&g_mss_uart0, &rx_buff, sizeof(rx_buff)) == 0){
@@ -116,3 +122,14 @@ void Toggle_GPIO_Pin(uint8_t GPIO_MASK)
     MSS_GPIO_set_outputs( gpio_pattern );
 
 }
+
+void Timer1_IRQHandler(void)
+{
+	MSS_TIM1_clear_irq();
+	count++;
+
+}
+
+
+
+

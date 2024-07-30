@@ -21,6 +21,7 @@
 static void delay(void);
 void Toggle_GPIO_Pin(uint8_t GPIO_MASK);
 int contador = 0;
+//uint32_t tim_count;
 
 /*==============================================================================
  * main() function.
@@ -37,6 +38,9 @@ int main()
 	uint32_t tick;
 
 	initBuffer(&rBuff);
+
+//	int element;
+//	removeElement(&rBuff, &element);
 
     /*
      * Initialize MSS GPIOs.
@@ -116,3 +120,9 @@ void Toggle_GPIO_Pin(uint8_t GPIO_MASK)
     MSS_GPIO_set_outputs( gpio_pattern );
 
 }
+
+
+
+
+
+

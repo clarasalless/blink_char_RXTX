@@ -2613,3 +2613,116 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2024-07-29 17:04:54.213
 !MESSAGE Debug session 'blink_char_novo Debug' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 -1 2024-07-29 17:08:28.720
+!MESSAGE Invocation exception when calling a service event handler method
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.cdt.dsf.service.DsfSession.doDispatchEvent(DsfSession.java:519)
+	at org.eclipse.cdt.dsf.service.DsfSession.access$2(DsfSession.java:463)
+	at org.eclipse.cdt.dsf.service.DsfSession$3.run(DsfSession.java:390)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.util.concurrent.RejectedExecutionException: Display org.eclipse.swt.widgets.Display@cc04b is disposed
+	at org.eclipse.cdt.dsf.ui.concurrent.SimpleDisplayExecutor.execute(SimpleDisplayExecutor.java:85)
+	at org.eclipse.cdt.dsf.ui.viewmodel.AbstractVMAdapter.handleEvent(AbstractVMAdapter.java:260)
+	at org.eclipse.cdt.dsf.ui.viewmodel.datamodel.AbstractDMVMAdapter.eventDispatched(AbstractDMVMAdapter.java:103)
+	... 13 more
+Caused by: org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1258)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:709)
+	at org.eclipse.cdt.dsf.ui.concurrent.SimpleDisplayExecutor.execute(SimpleDisplayExecutor.java:77)
+	... 15 more
+Root exception:
+java.util.concurrent.RejectedExecutionException: Display org.eclipse.swt.widgets.Display@cc04b is disposed
+	at org.eclipse.cdt.dsf.ui.concurrent.SimpleDisplayExecutor.execute(SimpleDisplayExecutor.java:85)
+	at org.eclipse.cdt.dsf.ui.viewmodel.AbstractVMAdapter.handleEvent(AbstractVMAdapter.java:260)
+	at org.eclipse.cdt.dsf.ui.viewmodel.datamodel.AbstractDMVMAdapter.eventDispatched(AbstractDMVMAdapter.java:103)
+	at sun.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.cdt.dsf.service.DsfSession.doDispatchEvent(DsfSession.java:519)
+	at org.eclipse.cdt.dsf.service.DsfSession.access$2(DsfSession.java:463)
+	at org.eclipse.cdt.dsf.service.DsfSession$3.run(DsfSession.java:390)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1258)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:709)
+	at org.eclipse.cdt.dsf.ui.concurrent.SimpleDisplayExecutor.execute(SimpleDisplayExecutor.java:77)
+	... 15 more
+!SESSION 2024-07-30 13:24:03.043 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -pluginCustomization plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86 -pluginCustomization plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-30 13:31:33.355
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-30 13:31:33.355
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Clara'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-07-30 14:38:57.113
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Clara\Documents\blink_char_RXTX\SoftConsole\blink_char_novo\Debug\blink_char_novo.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at ilg.gnuarmeclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.checkBinaryDetails(LaunchConfigurationDelegate.java:515)
+	at ilg.gnuarmeclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:231)
+	at ilg.gnuarmeclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:181)
+	at ilg.gnuarmeclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:155)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-07-30 14:38:57.115
+!MESSAGE C:\Users\Clara\Documents\blink_char_RXTX\SoftConsole\blink_char_novo\Debug\blink_char_novo.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Clara\Documents\blink_char_RXTX\SoftConsole\blink_char_novo\Debug\blink_char_novo.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at ilg.gnuarmeclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.checkBinaryDetails(LaunchConfigurationDelegate.java:515)
+	at ilg.gnuarmeclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:231)
+	at ilg.gnuarmeclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:181)
+	at ilg.gnuarmeclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:155)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2024-07-30 14:45:29.263
+!MESSAGE Debug session 'blink_char_novo Debug' already started. Terminate the first one before restarting.

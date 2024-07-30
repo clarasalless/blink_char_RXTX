@@ -21,6 +21,7 @@
 static void delay(void);
 void Toggle_GPIO_Pin(uint8_t GPIO_MASK);
 int contador = 0;
+//uint32_t tim_count;
 
 /*==============================================================================
  * main() function.
@@ -34,9 +35,10 @@ int main()
 
 	RingBuffer rBuff;
 
-	uint32_t tick;
-
 	initBuffer(&rBuff);
+
+//	int element;
+//	removeElement(&rBuff, &element);
 
     /*
      * Initialize MSS GPIOs.
@@ -55,7 +57,6 @@ int main()
 
 //    Configurando o timer
     Timer_init();
-    tick = Timer_get_tick();
 
     /*
      * Infinite loop.
@@ -66,8 +67,13 @@ int main()
 //    	Transmitindo a mensagem
     	MSS_UART_polled_tx(&g_mss_uart0, &message, 1);
     	Toggle_GPIO_Pin(MSS_GPIO_0_MASK);
-    	Timer_delay_ms(1000);
-    	tick = Timer_get_tick();
+    	Timer_delay_ms(100);
+//    	int count = 10;
+//    	while(count > 0)
+//    	{
+////    		delay();
+//    		count--;
+//    	}
 
 //    	Recebendo a mensagem
     	while(MSS_UART_get_rx(&g_mss_uart0, &rx_buff, sizeof(rx_buff)) == 0){
@@ -116,3 +122,9 @@ void Toggle_GPIO_Pin(uint8_t GPIO_MASK)
     MSS_GPIO_set_outputs( gpio_pattern );
 
 }
+
+
+
+
+
+

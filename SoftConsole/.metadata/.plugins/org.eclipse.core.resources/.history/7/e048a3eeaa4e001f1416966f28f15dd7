@@ -21,6 +21,7 @@
 static void delay(void);
 void Toggle_GPIO_Pin(uint8_t GPIO_MASK);
 int contador = 0;
+//uint32_t tim_count;
 
 /*==============================================================================
  * main() function.
