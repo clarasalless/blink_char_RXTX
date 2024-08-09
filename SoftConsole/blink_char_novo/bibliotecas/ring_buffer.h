@@ -8,16 +8,12 @@
 #ifndef RING_BUFFER_H_
 #define RING_BUFFER_H_
 
-
-
-#endif /* RING_BUFFER_H_ */
-
 // defines
-#define BUFFER_SIZE 10  // Define the size of the ring buffer
+#define BUFFER_SIZE 255  // Define the size of the ring buffer
 
 // typedefs
-typedef struct {
-    int buffer[BUFFER_SIZE];
+typedef struct{
+    uint8_t buffer[BUFFER_SIZE];
     int head;
     int tail;
     int count;
@@ -27,3 +23,7 @@ void initBuffer(RingBuffer *rb);
 int addElement(RingBuffer *rb, int element);
 int removeElement(RingBuffer *rb, int *element);
 int bytesInBuffer(RingBuffer *rb);
+
+#endif /* RING_BUFFER_H_ */
+
+

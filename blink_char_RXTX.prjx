@@ -823,8 +823,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Constraint Manager;Constraint Manager;0
+Reports;Reports;0
+ReportsCurrentItem;Run Programming Action:blink_char_RXTX_PROGRAM.log
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;blink_char_RXTX;0
+ACTIVEVIEW;Constraint Manager
 ENDLIST
 LIST ModuleSubBlockList
 LIST "blink_char_RXTX::work","component\work\blink_char_RXTX\blink_char_RXTX.v","TRUE","FALSE"

@@ -8,19 +8,36 @@
 #ifndef DRIVERS_MSS_GPIO_PROTOCOL_H_
 #define DRIVERS_MSS_GPIO_PROTOCOL_H_
 
+#include <stdint.h>  // Include this header to define uint8_t
+#include "ring_buffer.h"
+
+// Enum para os estados do protocolo
+typedef enum {
+    IDLE,
+    ID,
+    FUNC,
+    DATA,
+    CHECKSUM
+} ProtocolState;
+
+// Definição da estrutura Contexto
+typedef struct {
+    uint8_t context;
+    uint32_t timeout;
+    uint32_t last_time;
+    ProtocolState state;
+    uint8_t function;
+    RingBuffer buffer;
+    uint8_t checksum;
+} Contexto;
+
+void protocol_poll(Contexto *con, uint8_t data);
+void protocol_flush(Contexto *con);
+static uint8_t calculate_checksum(const uint8_t* buffer, uint8_t length);
+int validate_checksum(Contexto* con);
+int expected_data_length(Contexto* con);
+void process_message(Contexto* con);
 
 
 #endif /* DRIVERS_MSS_GPIO_PROTOCOL_H_ */
 
-#include <stdint.h>  // Include this header to define uint8_t
-
-typedef struct {
-	uint8_t context;
-	uint8_t timeout;
-	uint8_t last_time;
-	uint8_t state;
-	uint8_t function;
-} Contexto;
-
-void protocol_poll(Contexto con, uint8_t data);
-void protocol_flush(Contexto con);

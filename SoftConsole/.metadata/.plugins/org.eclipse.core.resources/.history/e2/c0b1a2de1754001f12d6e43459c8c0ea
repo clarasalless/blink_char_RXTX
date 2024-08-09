@@ -1,0 +1,28 @@
+/*
+ * protocol.c
+ *
+ *  Created on: 23/07/2024
+ *      Author: Clara
+ */
+#include <stdint.h>  // Include this header to define uint8_t
+#include "protocol.h"
+#include "timer_utils.h"
+
+void protocol_poll(Contexto con, uint8_t data)
+{
+	uint32_t current_time = Timer_get_tick();
+
+//	Verificação do timeout
+	if(current_time - con.last_time > con.timeout)
+	{
+
+	}
+}
+
+void protocol_flush(Contexto con)
+{
+	con.context = 0;
+	con.timeout = 0;
+	con.last_time = 0;
+}
+

@@ -1,0 +1,73 @@
+/*
+ * protocol.c
+ *
+ *  Created on: 23/07/2024
+ *      Author: Clara
+ */
+#include <stdint.h>  // Include this header to define uint8_t
+#include "protocol.h"
+#include "timer_utils.h"
+
+void protocol_poll(Contexto* con, uint8_t data)
+{
+	    // Verificar timeout
+	    if ((Timer_get_tick() - con->last_time) > con->timeout) {
+	        protocol_flush(con);  // Resetar o estado do protocolo
+	    }
+
+	    con->last_time = Timer_get_tick();  // Atualizar o último tempo de recebimento
+
+	    switch (con->state) {
+	        case IDLE:
+	            if (data == 0xAA) { // Supondo que 0xAA seja o byte inicial esperado
+	                con->state = ID;
+	                con->context = data;
+	            }
+	            else
+	            {
+	            	protocol_flush(con);
+	            }
+	            break;
+
+	        case ID:
+	            con->context = data;
+	            con->state = FUNC;
+	            break;
+
+	        case FUNC:
+	            con->function = data;
+	            con->state = DATA;
+	            break;
+
+	        case DATA:
+	            if (addElement(&con->buffer, data) == -1) {
+	                // Buffer cheio, tratar erro conforme necessário
+	            }
+	            // Checar se todos os dados esperados foram recebidos
+	            if (bytesInBuffer(&con->buffer) >= expected_data_length(con)) {
+	                con->state = CHECKSUM;
+	            }
+	            break;
+
+	        case CHECKSUM:
+	            if (validate_checksum(con, data)) {
+	                // Mensagem completa e checksum válido
+	                process_message(con);
+	            } else {
+	                // Checksum inválido, tratar erro conforme necessário
+	            }
+	            con->state = IDLE;
+	            break;
+
+	        default:
+	            con->state = IDLE;
+	            break;
+	    }
+}
+
+void protocol_flush(Contexto* con)
+{
+    initBuffer(&con->buffer);
+    con->state = IDLE;
+}
+
