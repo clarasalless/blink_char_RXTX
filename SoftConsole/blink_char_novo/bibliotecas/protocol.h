@@ -34,7 +34,7 @@ typedef struct {
 void protocol_poll(Contexto *con, uint8_t data);
 void protocol_flush(Contexto *con);
 static uint8_t calculate_checksum(const uint8_t* buffer, uint8_t length);
-int validate_checksum(Contexto* con);
+int validate_crc(Contexto* con);
 int expected_data_length(Contexto* con);
 void process_message(Contexto* con);
 

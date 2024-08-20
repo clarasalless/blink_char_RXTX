@@ -1,4 +1,4 @@
-15:19:06 **** Incremental Build of configuration Debug for project blink_char_novo ****
+15:24:46 **** Incremental Build of configuration Debug for project blink_char_novo ****
 make all 
 Building file: ../bibliotecas/protocol.c
 Invoking: Cross ARM C Compiler
@@ -22,9 +22,9 @@ Finished building: blink_char_novo.hex
 Invoking: Cross ARM GNU Print Size
 arm-none-eabi-size --format=berkeley "blink_char_novo.elf"
    text	   data	    bss	    dec	    hex	filename
-   8096	     32	  57408	  65536	  10000	blink_char_novo.elf
+   8544	     32	  56960	  65536	  10000	blink_char_novo.elf
 Finished building: blink_char_novo.siz
  
 
-15:19:09 Build Finished (took 2s.379ms)
+15:24:49 Build Finished (took 3s.492ms)
 

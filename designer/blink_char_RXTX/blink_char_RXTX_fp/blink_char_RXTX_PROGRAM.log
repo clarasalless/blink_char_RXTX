@@ -19,18 +19,18 @@ programmer 'S207823' : device 'M2S005' : Family: SmartFusion2
 programmer 'S207823' : device 'M2S005' : Product:      M2S005
 programmer 'S207823' : device 'M2S005' : Cortex-M3 Enabled (M3_ALLOWED = 1)
 programmer 'S207823' : device 'M2S005' : Programming Interface Protocol: JTAG
-programmer 'S207823' : device 'M2S005' : EXPORT ISC_ENABLE_RESULT[32] = 00606c24
+programmer 'S207823' : device 'M2S005' : EXPORT ISC_ENABLE_RESULT[32] = 005d6724
 programmer 'S207823' : device 'M2S005' : EXPORT CRCERR[1] = 0
 programmer 'S207823' : device 'M2S005' : EXPORT EDCERR[1] = 0
 programmer 'S207823' : device 'M2S005' : Programming FPGA Array...
 programmer 'S207823' : device 'M2S005' : EXPORT Fabric component digest[256] = 93a33f849560dc31e8ab56777e3c1a74c1c5dbb02a335639eec34f08905f039f
 programmer 'S207823' : device 'M2S005' : ===================================================================================
-programmer 'S207823' : device 'M2S005' : EXPORT DSN[128] = 51fab30d4c77ebc70d055f42b3fbcf6c
+programmer 'S207823' : device 'M2S005' : EXPORT DSN[128] = 02b1f15c67a4045932a62c2e8857d863
 programmer 'S207823' : device 'M2S005' : ===================================================================================
-programmer 'S207823' : device 'M2S005' : Finished: Fri Jul 26 16:28:40 2024 (Elapsed time 00:00:18)
+programmer 'S207823' : device 'M2S005' : Finished: Mon Aug 19 15:08:05 2024 (Elapsed time 00:00:17)
 programmer 'S207823' : device 'M2S005' : Executing action PROGRAM PASSED.
 programmer 'S207823' : Chain programming PASSED.
-Chain Programming Finished: Fri Jul 26 16:28:40 2024 (Elapsed time 00:00:18)
+Chain Programming Finished: Mon Aug 19 15:08:05 2024 (Elapsed time 00:00:17)
 
                         o - o - o - o - o - o
 

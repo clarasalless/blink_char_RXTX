@@ -27,16 +27,22 @@ int contador = 0;
  */
 int main()
 {
-	int bytes_in_buffer = 0;
+//	int bytes_in_buffer = 0;
+//	uint8_t message = 0xAA;
+//	uint8_t rx_buff;
+//	uint32_t rx_idx  = 0;
+//
+//	RingBuffer rBuff;
+//
+//	uint32_t tick;
+//
+//	initBuffer(&rBuff);
+
 	uint8_t message = 0xAA;
-	uint8_t rx_buff;
-	uint32_t rx_idx  = 0;
-
-	RingBuffer rBuff;
-
-	uint32_t tick;
-
-	initBuffer(&rBuff);
+	Contexto con;
+	initBuffer(&con.buffer);
+	con.state = IDLE;
+	con.timeout = 1000;  // Definindo timeout de 1 segundo
 
     /*
      * Initialize MSS GPIOs.
@@ -46,6 +52,7 @@ int main()
             MSS_UART_57600_BAUD,
             MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
     MSS_TIM1_init(MSS_TIMER_PERIODIC_MODE);
+
     /*
      * Configure MSS GPIOs.
      */
@@ -55,7 +62,7 @@ int main()
 
 //    Configurando o timer
     Timer_init();
-    tick = Timer_get_tick();
+//    tick = Timer_get_tick();
 
     /*
      * Infinite loop.
@@ -63,23 +70,33 @@ int main()
     for(;;)
     {
 
-//    	Transmitindo a mensagem
-    	MSS_UART_polled_tx(&g_mss_uart0, &message, 1);
-    	Toggle_GPIO_Pin(MSS_GPIO_0_MASK);
-    	Timer_delay_ms(1000);
-    	tick = Timer_get_tick();
+////    	Transmitindo a mensagem
+//    	MSS_UART_polled_tx(&g_mss_uart0, &message, 1);
+//    	Toggle_GPIO_Pin(MSS_GPIO_0_MASK);
+//    	Timer_delay_ms(1000);
+//    	tick = Timer_get_tick();
+//
+////    	Recebendo a mensagem
+//    	while(MSS_UART_get_rx(&g_mss_uart0, &rx_buff, sizeof(rx_buff)) == 0){
+//    		continue;
+//    	}
+//    	addElement(&rBuff, rx_buff);
+//    	Toggle_GPIO_Pin(MSS_GPIO_1_MASK);
+//
+//
+//    	bytes_in_buffer = bytesInBuffer(&rBuff);
 
-//    	Recebendo a mensagem
-    	while(MSS_UART_get_rx(&g_mss_uart0, &rx_buff, sizeof(rx_buff)) == 0){
-    		continue;
-    	}
-    	addElement(&rBuff, rx_buff);
-    	Toggle_GPIO_Pin(MSS_GPIO_1_MASK);
+    	uint8_t rx_buff;
+		if (MSS_UART_get_rx(&g_mss_uart0, &rx_buff, sizeof(rx_buff)) > 0) {
+			protocol_poll(&con, rx_buff);
+		}
 
-
-    	bytes_in_buffer = bytesInBuffer(&rBuff);
-    }
+		// Transmitindo a mensagem periodicamente (por exemplo, a cada 100 ms)
+		Timer_delay_ms(100);
+		MSS_UART_polled_tx(&g_mss_uart0, &message, 1);
+		Toggle_GPIO_Pin(MSS_GPIO_0_MASK);
     
+    }
     return 0;
 }
 

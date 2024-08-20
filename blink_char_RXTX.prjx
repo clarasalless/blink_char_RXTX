@@ -565,22 +565,22 @@ PARENT="<project>\component\Actel\DirectCore\CoreTimer\2.0.103\CoreTimer.cxf"
 ENDFILE
 VALUE "<project>\synthesis\blink_char_RXTX.so,so"
 STATE="utd"
-TIME="1721843998"
+TIME="1724090240"
 SIZE="245"
 ENDFILE
 VALUE "<project>\synthesis\blink_char_RXTX.vm,syn_vm"
 STATE="utd"
-TIME="1721843998"
+TIME="1724090239"
 SIZE="113796"
 ENDFILE
 VALUE "<project>\synthesis\blink_char_RXTX_syn.prj,prj"
 STATE="utd"
-TIME="1721843999"
+TIME="1724090241"
 SIZE="4346"
 ENDFILE
 VALUE "<project>\synthesis\blink_char_RXTX_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1721843998"
+TIME="1724090239"
 SIZE="1347"
 ENDFILE
 ENDLIST
@@ -828,7 +828,7 @@ Reports;Reports;0
 ReportsCurrentItem;Run Programming Action:blink_char_RXTX_PROGRAM.log
 StartPage;StartPage;0
 SmartDesign;blink_char_RXTX;0
-ACTIVEVIEW;Constraint Manager
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "blink_char_RXTX::work","component\work\blink_char_RXTX\blink_char_RXTX.v","TRUE","FALSE"

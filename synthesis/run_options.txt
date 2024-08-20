@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version V-2023.09M
 #--  Project file C:\Users\Clara\Documents\blink_char_RXTX\synthesis\run_options.txt
-#--  Written on Wed Jul 24 14:59:51 2024
+#--  Written on Mon Aug 19 14:57:12 2024
 
 
 #project files

@@ -17,7 +17,7 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 2024.1.0 
-Design: blink_char_RXTX                 Started: Wed Jul 24 15:00:35 2024
+Design: blink_char_RXTX                 Started: Mon Aug 19 14:57:44 2024
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -33,22 +33,22 @@ Improvement              : 0 seconds
 Placer completed successfully.
 
 Design: blink_char_RXTX                 
-Finished: Wed Jul 24 15:00:39 2024
+Finished: Mon Aug 19 14:57:48 2024
 Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
-Total Memory Usage: 99.9 Mbytes
+Total Memory Usage: 100.1 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTXStarted: Wed Jul 24 15:00:42 2024
+Design: C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTXStarted: Mon Aug 19 14:57:51 2024
 
 
 Router completed successfully.
 
 Design: C:\Users\Clara\Documents\blink_char_RXTX\designer\blink_char_RXTX\blink_char_RXTX
-Finished: Wed Jul 24 15:00:45 2024
+Finished: Mon Aug 19 14:57:54 2024
 Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
-Total Memory Usage: 258.0 Mbytes
+Total Memory Usage: 258.4 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage

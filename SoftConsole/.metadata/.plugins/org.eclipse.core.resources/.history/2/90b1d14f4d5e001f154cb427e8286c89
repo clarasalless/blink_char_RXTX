@@ -54,7 +54,7 @@ void protocol_poll(Contexto* con, uint8_t data)
 
         case CHECKSUM:
             con->checksum = data;
-            if (validate_crc(con)) {
+            if (validate_checksum(con)) {
                 // Mensagem completa e CRC-8 válido
                 process_message(con);
             } else {
@@ -96,7 +96,7 @@ static uint8_t calculate_crc8(const uint8_t* buffer, uint8_t length)
 }
 
 // Função para validar o CRC-8
-int validate_crc(Contexto* con)
+int validate_checksum(Contexto* con)
 {
     RingBuffer* buff = &con->buffer;
     if (con->checksum == calculate_crc8(buff->buffer, bytesInBuffer(buff))) {
