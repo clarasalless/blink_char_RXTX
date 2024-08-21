@@ -17,7 +17,7 @@ typedef enum {
     ID,
     FUNC,
     DATA,
-    CRC
+    CHECKSUM
 } ProtocolState;
 
 // Definição da estrutura Contexto

@@ -11,6 +11,8 @@
 
 #define CRC8_POLY 0x07  // Polinômio para CRC-8 (x^8 + x^2 + x + 1)
 
+int esc_byte = 0;
+
 void protocol_poll(Contexto* con, uint8_t data)
 {
 	// Verificar timeout
@@ -23,13 +25,18 @@ void protocol_poll(Contexto* con, uint8_t data)
     switch (con->state) {
         case IDLE:
             if (data == 0xAA) { // Supondo que 0xAA seja o byte inicial esperado
-                con->state = FUNC;
-                con->id = data;
+                con->state = ID;
+                con->context = data;
             }
             else
             {
                 protocol_flush(con);
             }
+            break;
+
+        case ID:
+            con->context = data;
+            con->state = FUNC;
             break;
 
         case FUNC:
@@ -41,39 +48,24 @@ void protocol_poll(Contexto* con, uint8_t data)
             if (addElement(&con->buffer, data) == -1) {
                 // Buffer cheio, tratar erro conforme necessário
             }
-            // FUNC: Read
-			if(con->function == 0x01){
-				if(con->count < 4){
-					addElement(con->buffer, data); // armazena o endereço no buffer
-					con->count++;
-				}
-				else
-					con->state = CRC;
-			}
-			// FUNC: Write
-			if(con->function == 0x02){
-				if(con->count < 4){
-					addElement(con->buffer, data); // armazena o endereço no buffer
-					con->count++;
-				}
-				else if(con->count > 4 && con->count < 7){
-
-				}
-			}
-
-//            // Verifica se foi recebido um esc byte
-//            if(data == esc_byte){
-//            	esc_byte = 1;
+            // Checar se todos os dados esperados foram recebidos
+//            if (bytesInBuffer(&con->buffer) >= expected_data_length(con)) {
+//                con->state = CHECKSUM;
 //            }
-//            // Verifica se o byte seguinte é 0xFF indicando o fim da transmissão da mensagem
-//            if(esc_byte != 0 && data == 0xFF){
-//            	con->state = CRC;
-//            }
-//            esc_byte = 0; // reseta o valor da variável esc_byte
+
+            // Verifica se foi recebido um esc byte
+            if(data == esc_byte){
+            	esc_byte = 1;
+            }
+            // Verifica se o byte seguinte é 0xFF indicando o fim da transmissão da mensagem
+            if(esc_byte != 0 && data == 0xFF){
+            	con->state = CHECKSUM;
+            }
+            esc_byte = 0; // reseta o valor da variável esc_byte
             break;
 
-        case CRC:
-            con->crc = data;
+        case CHECKSUM:
+            con->checksum = data;
             if (validate_crc(con)) {
                 // Mensagem completa e CRC-8 válido
                 process_message(con);

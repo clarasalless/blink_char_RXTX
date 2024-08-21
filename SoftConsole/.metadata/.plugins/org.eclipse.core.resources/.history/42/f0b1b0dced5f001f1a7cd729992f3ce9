@@ -17,7 +17,7 @@ typedef enum {
     ID,
     FUNC,
     DATA,
-    CRC
+    CHECKSUM
 } ProtocolState;
 
 // Definição da estrutura Contexto
@@ -29,8 +29,7 @@ typedef struct {
     uint8_t function;
     uint16_t size;
     RingBuffer buffer;
-    uint8_t crc;
-    uint32_t count = 0;
+    uint8_t checksum;
 } Contexto;
 
 void protocol_poll(Contexto *con, uint8_t data);

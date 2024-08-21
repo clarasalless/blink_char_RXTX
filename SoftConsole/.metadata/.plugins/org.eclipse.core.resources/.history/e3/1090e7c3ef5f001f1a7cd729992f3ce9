@@ -20,7 +20,7 @@ typedef struct{
 } RingBuffer;
 
 void initBuffer(RingBuffer *rb);
-int addElement(RingBuffer *rb, uint8_t element);
+int addElement(RingBuffer *rb, int element);
 int removeElement(RingBuffer *rb, int *element);
 int bytesInBuffer(RingBuffer *rb);
 

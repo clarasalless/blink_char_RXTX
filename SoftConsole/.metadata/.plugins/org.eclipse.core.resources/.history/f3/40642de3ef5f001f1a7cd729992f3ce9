@@ -28,7 +28,7 @@ int addElement(RingBuffer *rb, uint8_t element) {
 }
 
 // Remove an element from the ring buffer
-int removeElement(RingBuffer *rb, int *element) {
+int removeElement(RingBuffer *rb, uint8_t *element) {
     if (rb->count == 0) {
 //        printf("Buffer is empty.\n");
         return 0;  // Failure

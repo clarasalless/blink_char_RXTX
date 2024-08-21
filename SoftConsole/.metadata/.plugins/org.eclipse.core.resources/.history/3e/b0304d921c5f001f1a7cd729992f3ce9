@@ -96,7 +96,6 @@ int main()
     	}
     	protocol_poll(&con, rx_buff);
     	Toggle_GPIO_Pin(MSS_GPIO_1_MASK);
-    	Timer_delay_ms(100);
 
 		// Transmitindo a mensagem periodicamente (por exemplo, a cada 100 ms)
 //		Timer_delay_ms(100);

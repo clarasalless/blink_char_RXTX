@@ -1,18 +1,13 @@
-15:24:46 **** Incremental Build of configuration Debug for project blink_char_novo ****
+14:39:14 **** Incremental Build of configuration Debug for project blink_char_novo ****
 make all 
 Building file: ../bibliotecas/protocol.c
 Invoking: Cross ARM C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"bibliotecas/protocol.d" -MT"bibliotecas/protocol.o" -c -o "bibliotecas/protocol.o" "../bibliotecas/protocol.c"
 Finished building: ../bibliotecas/protocol.c
  
-Building file: ../main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-Finished building: ../main.c
- 
 Building target: blink_char_novo.elf
 Invoking: Cross ARM C Linker
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\Clara\Documents\blink_char_RXTX\SoftConsole\blink_char_novo\CMSIS\startup_gcc\debug-in-microsemi-smartfusion2-esram.ld" -Xlinker --gc-sections -Wl,-Map,"blink_char_novo.map" --specs=nano.specs -o "blink_char_novo.elf"  ./hal/CortexM3/GNU/hal.o ./hal/CortexM3/GNU/hw_reg_access.o  ./hal/CortexM3/cortex_nvic.o  ./drivers_config/sys_config/sys_config.o  ./drivers/mss_uart/mss_uart.o  ./drivers/mss_sys_services/mss_comblk.o ./drivers/mss_sys_services/mss_sys_services.o  ./drivers/mss_nvm/mss_nvm.o  ./drivers/mss_hpdma/mss_hpdma.o  ./drivers/mss_gpio/mss_gpio.o  ./bibliotecas/protocol.o ./bibliotecas/ring_buffer.o ./bibliotecas/timer_utils.o  ./CMSIS/startup_gcc/newlib_stubs.o ./CMSIS/startup_gcc/startup_m2sxxx.o  ./CMSIS/system_m2sxxx.o  ./main.o   
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Users\Clara\Documents\blink_char_RXTX\SoftConsole\blink_char_novo\CMSIS\startup_gcc\debug-in-microsemi-smartfusion2-envm.ld" -Xlinker --gc-sections -Wl,-Map,"blink_char_novo.map" --specs=nano.specs -o "blink_char_novo.elf"  ./hal/CortexM3/GNU/hal.o ./hal/CortexM3/GNU/hw_reg_access.o  ./hal/CortexM3/cortex_nvic.o  ./drivers_config/sys_config/sys_config.o  ./drivers/mss_uart/mss_uart.o  ./drivers/mss_sys_services/mss_comblk.o ./drivers/mss_sys_services/mss_sys_services.o  ./drivers/mss_nvm/mss_nvm.o  ./drivers/mss_hpdma/mss_hpdma.o  ./drivers/mss_gpio/mss_gpio.o  ./bibliotecas/protocol.o ./bibliotecas/ring_buffer.o ./bibliotecas/timer_utils.o  ./CMSIS/startup_gcc/newlib_stubs.o ./CMSIS/startup_gcc/startup_m2sxxx.o  ./CMSIS/system_m2sxxx.o  ./main.o   
 Finished building target: blink_char_novo.elf
  
 Invoking: Cross ARM GNU Create Flash Image
@@ -22,9 +17,9 @@ Finished building: blink_char_novo.hex
 Invoking: Cross ARM GNU Print Size
 arm-none-eabi-size --format=berkeley "blink_char_novo.elf"
    text	   data	    bss	    dec	    hex	filename
-   8544	     32	  56960	  65536	  10000	blink_char_novo.elf
+   8320	     32	  65504	  73856	  12080	blink_char_novo.elf
 Finished building: blink_char_novo.siz
  
 
-15:24:49 Build Finished (took 3s.492ms)
+14:39:15 Build Finished (took 1s.16ms)
 

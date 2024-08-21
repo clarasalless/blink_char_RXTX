@@ -87,21 +87,14 @@ int main()
 //    	bytes_in_buffer = bytesInBuffer(&rBuff);
 
     	uint8_t rx_buff;
-//		if (MSS_UART_get_rx(&g_mss_uart0, &rx_buff, sizeof(rx_buff)) > 0) {
-//			protocol_poll(&con, rx_buff);
-//		}
-
-    	while(MSS_UART_get_rx(&g_mss_uart0, &rx_buff, sizeof(rx_buff)) == 0){
-    		continue;
-    	}
-    	protocol_poll(&con, rx_buff);
-    	Toggle_GPIO_Pin(MSS_GPIO_1_MASK);
-    	Timer_delay_ms(100);
+		if (MSS_UART_get_rx(&g_mss_uart0, &rx_buff, sizeof(rx_buff)) > 0) {
+			protocol_poll(&con, rx_buff);
+		}
 
 		// Transmitindo a mensagem periodicamente (por exemplo, a cada 100 ms)
-//		Timer_delay_ms(100);
-//		MSS_UART_polled_tx(&g_mss_uart0, &message, 1);
-//		Toggle_GPIO_Pin(MSS_GPIO_0_MASK);
+		Timer_delay_ms(100);
+		MSS_UART_polled_tx(&g_mss_uart0, &message, 1);
+		Toggle_GPIO_Pin(MSS_GPIO_0_MASK);
     
     }
     return 0;

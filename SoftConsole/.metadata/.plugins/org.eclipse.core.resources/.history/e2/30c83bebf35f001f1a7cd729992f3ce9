@@ -52,11 +52,7 @@ void protocol_poll(Contexto* con, uint8_t data)
 			}
 			// FUNC: Write
 			if(con->function == 0x02){
-				if(con->count < 4){
-					addElement(con->buffer, data); // armazena o endereço no buffer
-					con->count++;
-				}
-				else if(con->count > 4 && con->count < 7){
+				if(con->count <4){
 
 				}
 			}

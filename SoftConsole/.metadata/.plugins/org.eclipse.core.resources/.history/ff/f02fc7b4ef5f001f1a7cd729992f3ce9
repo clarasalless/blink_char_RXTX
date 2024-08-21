@@ -15,7 +15,7 @@ void initBuffer(RingBuffer *rb) {
 }
 
 // Add an element to the ring buffer
-int addElement(RingBuffer *rb, uint8_t element) {
+int addElement(RingBuffer *rb, int element) {
     if (rb->count == BUFFER_SIZE) {
 //        printf("Buffer is full. Overwriting oldest element.\n");
         rb->tail = (rb->tail + 1) % BUFFER_SIZE;
